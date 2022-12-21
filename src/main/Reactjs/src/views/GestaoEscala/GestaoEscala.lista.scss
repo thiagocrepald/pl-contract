@@ -1,0 +1,122 @@
+@import "../../components/responsive/media_query.scss";
+
+#gestao-escala-lista {
+  .botton-to-right {
+    display: flex;
+    text-align: right;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    @include responsive(s) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .row-legenda {
+    margin: 0 !important;
+  }
+
+  .select-escala {
+    cursor: pointer;
+  }
+
+  .round-number-container {
+    padding: 2px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e52f2f;
+    @include responsive(s) {
+      padding: none;
+      border: none;
+      justify-content: flex-start;
+      background-color: unset;
+    }
+    span {
+      color: white;
+      font-size: 10px;
+    }
+  }
+
+  .round-number-container--mobile {
+    display: none;
+    @include responsive(s) {
+      padding: 5px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e52f2f;
+      color: white;
+    }
+  }
+
+  .table__web {
+    @include responsive(s) {
+      display: none;
+    }
+  }
+
+  .table__mobile {
+    display: none;
+    @include responsive(s) {
+      display: block;
+      table-layout: fixed;
+      width: 100%;
+
+      .table__mobile--header {
+        width: 143px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-right: 1px solid #e9ecef;
+        font-weight: 600;
+        background-color: #f6f9fc;
+        color: #8898aa;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .card .table td,
+  .card .table th {
+    @include responsive(s) {
+      padding: 15px;
+      white-space: normal;
+    }
+  }
+
+  .button-style {
+    display: flex;
+    @include responsive(s) {
+      display: flex;
+      justify-content: space-between;
+
+      &--first {
+        width: 40%;
+      }
+
+      &--second {
+        width: 60%;
+      }
+    }
+  }
+
+  .rdt {
+    @include responsive (s) {
+      margin-bottom: 10px;
+    }
+  }
+
+  #diaSelect {
+    @include responsive (s) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .p-b-20 {
+    @include responsive (s) {
+      padding-bottom: 40px;
+    }
+  }
+}

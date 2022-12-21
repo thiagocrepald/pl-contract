@@ -1,0 +1,69 @@
+# NESTE LINK TEMOS EXPLICAÇÃO SOBRE COMO CONFIGURAR O APP.YAML
+# https://cloud.google.com/appengine/docs/flexible/java/configuring-your-app-with-app-yaml#health_checks
+
+# application: controlenamao-gestao
+runtime: java
+env: flex
+threadsafe: true
+
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+#  secure: always  # chamadas HTTP serão redirecionadas para o mesmo link mas acrescentanto HTTPS na frente do link
+
+
+runtime_config:  # Optional
+  jdk: openjdk8
+  server: jetty9
+
+manual_scaling:
+  instances: 1
+
+#automatic_scaling:
+#  min_num_instances: 1 #minimo de instancias ativas
+#  max_num_instances: 2 #maximo de instancias ativas
+#  cool_down_period_sec: 600 #O número de segundos que o autoescalador deve aguardar antes de começar a coletar informações de uma nova instância.
+#  cpu_utilization:
+#  target_utilization: 0.8 #utilização minima da cpu para subir uma nova instancia (0.1 = 10%)
+
+resources:
+  cpu: 1
+  memory_gb: 3.0
+  disk_size_gb: 40
+
+
+#env_variables:
+#  JAVA_OPTS: -D.level=WARNING # Logging options
+#  SENDGRID_API_KEY: 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
+#  #  SENDGRID_API_KEY: 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
+#  #  SENDGRID_API_KEY: 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
+#  SENDGRID_SENDER: sistemas@nextage.com.br
+#  CONTATO_NOME: Nextage sistemas de informatica LTDA
+#  CNPJ: 08706688000131
+#  EMAIL: contato@controlenamao.com.br
+#  FONE: 4130158433
+#  AMBIENTE: PROD
+#  NOME_SISTEMA: App Food Services
+#  VERSAO_CNM: 37
+
+#  Informações default
+#network:
+#  forwarded_ports:
+#  - 8081
+#  - 8082:8083
+#  instance_tag: <tag-name>
+#  name: <network-name>
+
+
+# Habilitado por default
+#health_check:
+#  enable_health_check: True
+#  check_interval_sec: 5
+#  timeout_sec: 4
+#  unhealthy_threshold: 2
+#  healthy_threshold: 2
+#  restart_threshold: 60
+
+#You can define environment variables in app.yaml to make them available to the app:
+#env_variables:
+#  MY_VAR: 'my value'

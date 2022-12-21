@@ -1,0 +1,349 @@
+.close-img-item {
+    position: relative;
+    bottom: 20px;
+    left: 1020px;
+    cursor: pointer;
+  }
+
+.contract-register__container {
+  &--header {
+    height: 54px;
+    border-bottom: solid 1px #d8d8d8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+    background: white;
+
+    .notification-img {
+      content: url(../../../assets/img/svg/notificaçao.svg);
+    }
+    .text-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+      margin-left: 14px;
+    }
+    .text-subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      color: #3e3e3e;
+    }
+  }
+
+  &--footer {
+    height: 52px;
+    background: #149372;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    &-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .button-cancel {
+      font-size: 15px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 120px;
+    }
+    .button-save {
+      font-size: 15px;
+      color: #149372;
+      background: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      height: 44px;
+      width: 178px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circular-progress {
+        div.MuiCircularProgress-indeterminate {
+          color: green;
+          height: 20px !important;
+          width: 20px !important;
+          margin-left: 9px;
+          margin-bottom: -4px;
+        }
+      }
+    }
+  }
+  &--body {
+    padding-bottom: 90px;
+    &-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3e3e3e;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    .close-img-tag {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 2px;
+        cursor: pointer;
+      }
+
+    &-margin-active {
+      border: solid 1px #a6c7c3;
+      background: #f2fffc;
+      position: relative;
+      padding: 28px 17px 8px 17px;
+      border-radius: 6px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+      .close-img {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+      }
+    }
+
+    &-margin {
+      border: solid 1px #d4e4e2;
+      padding: 28px 17px 8px 17px;
+      border-radius: 6px;
+      background: #fdfdfd;
+      position: relative;
+
+      .close-img {
+        position: relative;
+        bottom: 20px;
+        left: 1041px;
+        cursor: pointer;
+      }
+    }
+    div.MuiFilledInput-root {
+      height: 50px !important;
+      background: #f6f6f6;
+      border-color: #d8d8d8;
+      border-radius: 6px;
+      overflow: hidden;
+      .MuiSelect-iconFilled {
+        margin-right: 14px;
+      }
+    }
+    // .MuiInputLabel-filled {
+    //   padding-left: 6px;
+    //   font-size: 15px;
+    //   color: #979797;
+    //   position: absolute;
+    //   top: 6px;
+    // }
+
+    // .Mui-focused {
+    //   .MuiFilledInput{
+    //     position: absolute;
+    //     top: 0px;
+    //     padding: 40px;
+    //   }
+    // }
+    .row {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contract-request__fileUpload {
+  height: 65px;
+  width: 100%;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+
+  border: 1px dashed #c4c4c4;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #979797;
+  background: #f6f6f6;
+
+  label {
+    padding: 0;
+    margin: 0;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    bottom: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  div.contract-request__fileUpload--upload-button {
+    font-size: 12px;
+    color: #149372;
+    border-radius: 6px;
+    border: 1px solid #d8d8d8;
+    background: #ffffff;
+    height: 35px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    .anexo-img {
+      margin-right: 6px;
+    }
+  }
+
+  &--wrapper {
+    display: flex;
+    flex-direction: column;
+    border: none !important;
+    background: transparent;
+    min-width: 50px;
+    width: max-content;
+    align-items: flex-start !important;
+    width: 100%;
+    position: relative;
+  }
+
+  &--label-upper {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    color: #7b7b7b;
+    width: max-content;
+    margin-top: 7px;
+    margin-left: 16px;
+    margin-bottom: 2px;
+    position: absolute;
+    display: flex;
+  }
+
+  &--tag {
+    position: relative;
+    width: max-content;
+    margin-top: 33px;
+    margin-left: 15px;
+
+    span {
+      background-color: #9df2da;
+      border-radius: 10px;
+      padding: 0px 10px;
+      font-size: 13px;
+      color: #3e3e3e;
+      font-weight: 600;
+      text-decoration: none !important;
+      cursor: default;
+      width: max-content;
+    }
+
+    a {
+      line-height: initial;
+      margin-top: 3px;
+    }
+
+    &-delete {
+      position: absolute;
+      left: calc(100% - 33px);
+      top: 2px;
+      cursor: pointer !important;
+      background: transparent !important;
+    }
+  }
+
+  &--upload-button {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }
+
+  &--drag-box {
+    &-wrapper {
+      border: dashed #7b7b7b 4px;
+      background-color: rgba(255,255,255,.8);
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      left: 0px;
+      text-align: center;
+      color: grey;
+      font-size: 36px;
+      pointer-events: none;
+    }
+
+    &-icon {
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 12px);
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.contract-register__additive-form {
+  .files-form__container {
+    height: 63px;
+  }
+
+  p.files-form__body--label-upper {
+    font-size: 12px;
+  }
+
+  .files-form__body--label-upper {
+    margin-bottom: 7px;
+  }
+}
+
+.doctor-span {
+    background-color: #9df2da;
+    border-radius: 10px;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #3e3e3e;
+    font-weight: 600;
+    margin: 0 4px;
+    }
+
+.doctor-span:first-of-type {
+    margin: 0 4px 0 0;
+}
+
+.text-area {
+  width: 100%;
+  border-color: #c4c4c4;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: "Open Sans";
+  padding: 6px 16px;
+}
+
+div.contract-register--dropdown {
+  li:first-child {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #149372;
+  }
+}

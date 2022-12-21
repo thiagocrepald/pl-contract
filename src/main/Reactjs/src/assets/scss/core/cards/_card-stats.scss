@@ -1,0 +1,22 @@
+@import "../../components/responsive/media_query.scss";
+
+
+//
+// Card stats
+//
+
+.card-stats {
+    .card-body {
+        padding: 1rem 1.5rem;
+        @include responsive(s) {
+            padding: 0;
+        }
+    }
+
+    .card-status-bullet {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+}

@@ -1,0 +1,147 @@
+.contract-detail__container--title {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.contact-cost__container--tables {
+    padding-bottom: 40px;
+
+    .MuiTableHead-root {
+        th:nth-child(3) {
+            max-width: 400px;
+            white-space: break-spaces;
+        }
+    }
+
+    .MuiTableBody-root {
+        td:nth-child(3) {
+            max-width: 400px;
+            white-space: break-spaces;
+        }
+    }
+}
+
+.contract-cost__modal {
+    background: white;
+    max-width: 576px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    padding: 32px 80px;
+    border-radius: 6px;
+
+    &--caption {
+        font-size: 10px;
+        color: #979797;
+        margin-top: 2px;
+        position: absolute;
+    }
+
+    &--caption-second {
+        font-size: 10px;
+        color: #979797;
+        position: absolute;
+        max-width: 210px;
+        width: 210px;
+        margin-top: 2px;
+    }
+}
+
+.close-img {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.contract-cost__modal--subtitle {
+    font-size: 14px;
+    color: #3e3e3e;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.contract-cost__modal--border {
+    display: flex;
+    border: 1px solid #d4e4e2;
+    border-radius: 6px;
+    padding: 16px;
+}
+.contract-cost__modal--border-second {
+    border: 1px solid #d4e4e2;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.custom-date-field-wrapper:first-child {
+    margin-bottom: 0;
+}
+
+div.modal-body {
+    width: 100%;
+}
+
+.MuiSelect-root.MuiSelect-select.MuiSelect-filled.MuiInputBase-input.MuiFilledInput-input {
+    padding: 31px 12px 10px 14px;
+}
+
+.container-date-field {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.data-field {
+    div.custom-date-field-wrap {
+        height: 50px;
+        background: #f6f6f6;
+        padding-left: 12px;
+
+        label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiFormLabel-filled {
+            color: #a3a9ab;
+            padding-top: 10px;
+            margin: 0;
+            font: inherit;
+            font-size: 14px;
+        }
+
+        input.MuiInputBase-input.MuiInput-input.MuiInputBase-inputAdornedEnd {
+            font-size: 14px;
+            font-weight: 300;
+            color: #404040;
+
+            &::placeholder {
+                font-weight: 350;
+                color: #636262;
+            }
+        }
+    }
+}
+
+#insertValueHour-helper-text.MuiFormHelperText-root.MuiFormHelperText-contained.Mui-error.helper-text-description-modal {
+    font-weight: 500;
+    margin: -5px 14px 0 14px;
+}
+
+.container-text-area {
+    margin: 25px 0 19px 0;
+
+    textarea {
+        font-weight: 200;
+        font-size: 14px;
+        background: #f6f6f6;
+        color: #404040;
+        border: 1px solid #d8d8d8;
+
+        &::placeholder {
+            color: #979797;
+        }
+    }
+}
+
+ul {
+    max-height: 235px;
+}

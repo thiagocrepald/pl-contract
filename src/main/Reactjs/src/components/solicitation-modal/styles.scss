@@ -1,0 +1,199 @@
+.contract-request__modal {
+    background: white;
+    max-width: 876px;
+    width: 876px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    padding: 32px 35px;
+    border-radius: 4px;
+  
+    .close-img {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  
+    &--title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #3e3e3e;
+      text-align: center;
+      margin-bottom: 27px;
+    }
+    &--subtitle {
+      font-size: 14px;
+      font-weight: 700;
+      color: #3e3e3e;
+      margin-bottom: 10px;
+    }
+    .selection-button {
+      width: 110px;
+      height: 40px;
+      border: 1px solid #d8d8d8;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #149372;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+      background: white;
+      transition: 250ms;
+      cursor: pointer;
+  
+      &:hover {
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+      }
+    }
+  
+    &--buttons {
+      display: flex;
+      justify-content: center;
+      padding: 0 50px;
+      .icon-arrow-filled {
+        content: url(../../assets/img/svg/arrow-left-filled.svg);
+        margin-right: 8px;
+        margin-bottom: 1px;
+      }
+    }
+
+    &--required-notification {
+      color: #f44336;
+      letter-spacing: 0.54px;
+      font-size: 12px;
+      margin-left: 14px;
+      font-weight: 400;
+      line-height: 1.66;
+    }
+  
+    &--container {
+      background-color: #f8f8f8;
+      padding: 0 16px;
+  
+      &-line {
+        height: 60px;
+        border-bottom: solid 1px #e3e3e3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &-line-second {
+        height: 60px;
+        border-bottom: solid 1px #e3e3e3;
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      &-line:last-child {
+        border: none;
+      }
+  
+      &-title {
+        font-size: 12px;
+        color: #7b7b7b;
+      }
+  
+      &-answer {
+        font-size: 14px;
+        color: #3e3e3e;
+      }
+
+      &--file-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    }
+    
+    &--body-files {
+      border: 1px dashed #c4c4c4;
+      border-radius: 6px;
+      font-size: 15px;
+      color: #979797;
+      background: #f6f6f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 22px;
+      min-height: 60px;
+    }
+
+    &--body-tags {
+      span {
+        background-color: #9df2da;
+        border-radius: 10px;
+        padding: 2px 10px;
+        font-size: 11px;
+        color: #3e3e3e;
+        font-weight: 600;
+        margin: 0 4px;
+        text-decoration: none;
+      }
+
+      span:first-of-type {
+        margin: 0 4px 0 0;
+      }
+    }
+    span.contract-request__modal--body-tags {
+      display: flex;
+      position: relative;
+    }
+
+    div.contract-request__modal--image-delete-file {
+      width: 8px;
+      position: absolute;
+      right: 8px;
+      top: 0px;
+      width: 18px;
+      height: 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+    }
+    
+    div.MuiFilledInput-root {
+      height: 50px;
+      background: #f6f6f6;
+      border-color: #d8d8d8;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+}
+  
+  div.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    position: absolute;
+    inset: 0px;
+    display: flex;
+  }
+  
+  .contract-request__modal--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .contract-request__modal-adjust {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3e3e3e;
+  
+    img {
+      margin-right: 6px;
+    }
+  }
+  
+.solicitation-modal {
+  &__custom-text-field {
+    .MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-fullWidth.MuiInputBase-formControl{
+      width: 150px !important;
+      height: 50px !important;
+    }
+  }
+}

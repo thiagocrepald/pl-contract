@@ -1,0 +1,35 @@
+.select-icn {
+    margin-right: 5px;
+}
+
+.check-icn {
+    content: url('../../assets/img/svg/down-arrow.svg');
+}
+
+.radio-click-area {
+    width: 50%
+}
+
+.check-radio-blank {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: solid 1px #b9b9b9;
+    background-color: #ffffff;
+}
+
+.check-radio {
+    content: url('../../assets/img/svg/check.svg');
+}
+
+.error-label {
+    display: flex;
+    width: 100%;
+    padding-left: 14px;
+    span {
+        font-size: 12px;
+        padding-top: 2px;
+        color: red;
+        letter-spacing: 0.54px;
+    }
+}

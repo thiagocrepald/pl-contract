@@ -1,0 +1,38 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <display-name>plantao-mais</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <context-param>
+    <param-name>org.eclipse.jetty.servlet.Default.useFileMappedBuffer</param-name>
+    <param-value>false</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>org.mortbay.jetty.servlet.Default.useFileMappedBuffer</param-name>
+    <param-value>false</param-value>
+  </context-param>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/index.html</location>
+  </error-page>
+
+  <listener>
+    <listener-class>
+      org.quartz.ee.servlet.QuartzInitializerListener
+    </listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>
+      br.com.plantaomais.config.ApplicationProperties
+    </listener-class>
+  </listener>
+
+</web-app>

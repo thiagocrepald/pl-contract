@@ -1,0 +1,1 @@
+INSERT INTO `TIPO_PERMISSAO` (`ID`, `DESCRICAO`) VALUES ('13', 'Cadastro Eventos --> Criar, alterar, excluir eventos');

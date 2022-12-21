@@ -1,0 +1,26 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.hygea.plantaomais",
+            "sha256_cert_fingerprints": ["1C:36:23:35:2C:BD:8C:70:3E:CF:8D:15:9A:D2:B6:96:D8:B2:15:24:B8:B1:04:56:00:54:92:7D:B3:8F:F9:5E"]
+        }
+    },
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.hygea.plantaomais.development",
+            "sha256_cert_fingerprints": ["1C:36:23:35:2C:BD:8C:70:3E:CF:8D:15:9A:D2:B6:96:D8:B2:15:24:B8:B1:04:56:00:54:92:7D:B3:8F:F9:5E"]
+        }
+    },
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.hygea.plantaomais.staging",
+            "sha256_cert_fingerprints": ["1C:36:23:35:2C:BD:8C:70:3E:CF:8D:15:9A:D2:B6:96:D8:B2:15:24:B8:B1:04:56:00:54:92:7D:B3:8F:F9:5E"]
+        }
+    }
+]

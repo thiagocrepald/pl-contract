@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-react",
+        "tslint-eslint-rules",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "jsx-wrap-multiline": false,
+        "jsx-boolean-value": false,
+        "jsx-no-lambda": false,
+        "no-console": false
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "src/**/*.js",
+            "node_modules",
+            "node_modules/**",
+            "build",
+            "src/*.js"
+        ]
+    }
+}

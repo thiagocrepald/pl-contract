@@ -1,0 +1,132 @@
+
+
+#esqueciSenhaView{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  #header{
+    width: 100vw;
+    height: 60px;
+    background-color: #0E7258;
+    display: flex;
+    align-items: center;
+    img{
+      width: 80px;
+      height: 45px;
+      margin-left: 2vw;
+    }
+  }
+
+  #back-page{
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+    margin-top: 20px;
+    cursor: pointer;
+    p{
+      margin-left: 10px;
+      margin-bottom: 0;
+      font-weight: 400;
+      color: #404040;
+    }
+  }
+  .login-form {
+    width: 100% !important;
+    padding-top: 80px;
+    .MuiInputBase-root{
+      height: 50px !important;
+    }
+    div.MuiFilledInput-root {
+      height: 50px !important;
+      background: #f6f6f6;
+      border-color: #d8d8d8;
+      border-radius: 6px;
+      overflow: hidden;
+      .MuiSelect-iconFilled {
+        margin-right: 14px;
+      }
+    }
+    .MuiInputLabel-filled {
+        padding-left: 6px;
+        font-size: 15px;
+        color: #979797;
+        position: absolute;
+    }
+    label{
+      padding: 8px 8px 8px 0;
+    }
+    .container--text{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p{
+        width: 318px;
+        font-weight: 400;
+        color: #505050;
+        font-size: 14px;
+      }
+    }
+  }
+  .error--text{
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 3px;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    margin-left: 5px;
+  }
+  .containerSend{
+    width: 100% !important;
+    padding-top: 80px;
+    justify-content: center;
+    text-align: center;
+    .container--text{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p{
+        width: 254px;
+        font-weight: 400;
+        color: #505050;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .icon-arrow-right {
+    content: url(../../assets/img/svg/right-arrow.svg);
+    margin-left: 14px;
+  }
+  .clip-loader-login {
+    position: relative;
+    margin-left: 45%;
+  }
+
+  .text-align{
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+  }
+
+  .bg-default{
+    background-color: white !important;
+  }
+
+  .text{
+    color: black;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .p-l-10{
+    padding-left: 10px;
+  }
+}
+.bg-default{
+  background-color: white !important;
+}
+

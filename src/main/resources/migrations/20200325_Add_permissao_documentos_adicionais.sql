@@ -1,0 +1,1 @@
+INSERT INTO `TIPO_PERMISSAO` (`ID`, `DESCRICAO`) VALUES ('12', 'Cadastros Médicos --> Criar, alterar, excluir documentos adicionais');

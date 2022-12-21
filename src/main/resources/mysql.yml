@@ -1,0 +1,17 @@
+version: '2'
+services:
+    plantaomais-development-mysql:
+        container_name: plantaomais-development-mysql
+        image: mysql:5.7.13
+        # volumes:
+        #     - ~/volumes/jhipster/datamate/mysql/:/var/lib/mysql/
+        environment:
+            - MYSQL_USER=timetrackerapi
+            - MYSQL_PASSWORD=timetrackerapi
+            - MYSQL_ROOT_PASSWORD=timetrackerapi
+            - MYSQL_ALLOW_EMPTY_PASSWORD=no
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=timetrackerapi
+        ports:
+            - 3306:3306
+        command: mysqld --lower_case_table_names=1 --skip-ssl --max_allowed_packet=1000000000 --net_buffer_length=1000000

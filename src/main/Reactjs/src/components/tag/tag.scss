@@ -1,0 +1,86 @@
+.tag__container {
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1px 10px;
+    border-radius: 10px;
+  }
+
+  font-family: "Open Sans";
+  text-transform: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tag__color {
+    &--OK,
+    &--ok {
+      background: #42B69A;
+    }
+
+    &--ACTIVE,
+    &--active {
+      background: #00A0B5;
+    }
+
+    &--PENDING,
+    &--pendency {
+      background: #DF6944;
+    }
+
+    &--ADJUSTED,
+    &--adjusted {
+      background: #91A739;
+    }
+
+    &--ADJUSTED_DOCTOR,
+    &--doctorAdjustment {
+      background: #E7760C;
+    }
+
+    &--ADJUSTED_ADMIN,
+    &--adminAdjustment {
+      background: #E7760C;
+    }
+
+    &--INACTIVE,
+    &--inactive {
+      background: #E1E2E6;
+      color: #979797;
+    }
+
+    &--CORRECTION,
+    &--correction {
+      background: #E7760C;
+    }
+
+    &--ATTENDANCE {
+      background: #7E8251;
+    }
+
+    &--CONTESTED,
+    &--contested {
+      background: #E7760C;
+    }
+
+    &--PROGRAMMED{
+      background: #E7A05D;
+    }
+
+    &--NOT_REGISTERED,
+    &--notRegistered {
+      background: #954A61;
+    }
+
+    &--REJECTED,
+    &--rejected {
+      background: #D83434;
+    }
+
+    &--CANCELED,
+    &--canceled {
+      background: #B4B4B4;
+    }
+  }
+}

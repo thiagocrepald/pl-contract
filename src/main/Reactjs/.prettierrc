@@ -1,0 +1,9 @@
+{
+  "tabWidth": 4,
+  "useTabs": false,
+  "tslintIntegration": true,
+  "eslintIntegration": true,
+  "jsxSingleQuote": false,
+  "singleQuote": true,
+  "printWidth": 160
+}

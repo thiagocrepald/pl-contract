@@ -1,0 +1,136 @@
+.button__container-outlined {
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  color: #149372;
+  font-weight: 400;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 12px;
+  background: transparent;
+  outline: none !important;
+  border: solid 2px #149372;
+  justify-content: space-between;
+  transition: color 250ms ease, background 250ms ease;
+  background: transparent;
+  &-icon {
+    margin-right: 10px;
+  }
+  &-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--green {
+    background: #149372;
+    border: transparent;
+    color: white;
+    transition: 250ms;
+    &:hover {
+      background: #027658;
+    }
+    &:active {
+      background: #005740;
+    }
+  }
+  &--white {
+    & * {
+      color: #979797;
+    }
+    background: white;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 250ms;
+    font-size: 11px;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      & * {
+        color: #505050;
+        .icon-dowload2:before {
+          color: #505050;
+        }
+      }
+    }
+
+    &:active {
+      box-shadow: none;
+
+      & * {
+        color: #000000;
+        .icon-dowload2:before {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  &--gray {
+    & * {
+      color: #149372;
+    }
+    background: white;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 250ms;
+    font-size: 11px;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+      & * {
+        color: #027658;
+        .icon-dowload2:before {
+          color: #027658;
+        }
+      }
+    }
+    &:active {
+      box-shadow: none;
+
+      & * {
+        color: #005740;
+        .icon-dowload2:before {
+          color: #005740;
+        }
+      }
+    }
+  }
+
+  &--greenSecond {
+    & * {
+      color: #149372;
+    }
+    background: white;
+    border: 1px solid #149372;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 250ms;
+    font-size: 11px;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+      & * {
+        color: #027658;
+        .icon-dowload2:before {
+          color: #027658;
+        }
+      }
+    }
+    &:active {
+      box-shadow: none;
+
+      & * {
+        color: #005740;
+        .icon-dowload2:before {
+          color: #005740;
+        }
+      }
+    }
+  }
+
+  &.is-center {
+    justify-content: center;
+  }
+}

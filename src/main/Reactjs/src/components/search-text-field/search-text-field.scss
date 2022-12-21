@@ -1,0 +1,81 @@
+@import "../../assets/css/fonts.scss";
+
+/**************************************/
+
+
+/* INPUTS */
+
+
+/**************************************/
+
+.MuiFilledInput-underline::before {
+    display: none;
+}
+
+// .MuiLabel-shrink {
+//     background-color: #ffffff !important;
+// }
+.MuiInputBase-input:focus {
+    //     border-radius: 4px !important;
+    //     border: solid 1px #e8ebec !important;
+    // }
+    .MuiFormHelperText-root.Mui-error {
+        font-family: Raleway;
+        font-size: 10px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.54px;
+        color: #e04444;
+    }
+    .Mui-focused {
+        color: #9199a1 !important;
+    }
+    .MuiFilledInput-root {
+        color: #9199a1 !important;
+        height: 60px;
+    }
+    .MuiFilledInput-underline::after {
+        display: none !important;
+    }
+    .action {
+        .MuiFilledInput-underline::after {
+            display: none !important;
+        }
+    }
+    .MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+        margin-top: 0 !important;
+    }
+}
+
+div.MuiFilledInput-root {
+    background: white;
+    border: solid 1px #D8D8D8;
+    border-radius: 6px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+    color: #404040;
+    height: 36px;
+    overflow: hidden;
+    .MuiFilledInput-input {
+        padding: 9px 0 9px 12px;
+    }
+}
+
+.search-icon {
+    content: url(../../assets/img/svg/lupa.svg);
+}
+
+.MuiFilledInput-underline:after {
+    display: none;
+}
+
+div.MuiFilledInput-root.Mui-focused {
+    background: white;
+}
+
+div.MuiFilledInput-root:hover {
+    background: white;
+}

@@ -1,0 +1,213 @@
+@import "src/media-query";
+
+.collapsible-table__container {
+
+  &--field {
+    &-doctor-waiting {
+      cursor: pointer;
+    }
+
+    &-disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    &-collapsible {
+      td {
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      &-pro-labor {
+        display: flex;
+        align-items: center; 
+        justify-content: center;		
+
+        span {
+          min-width: 140px;
+        }
+      }
+
+      svg {
+        vertical-align: baseline;
+        margin-left: 14px;
+      }
+
+      &-has-anticipated-prolabore {
+        pointer-events: none;
+      }
+    }
+  }
+
+  @include responsiveHeight(ss) {
+    max-height: 200px;
+  }
+  @include responsiveHeight(s) {
+    max-height: 400px;
+  }
+  @include responsiveHeight(m) {
+    max-height: 550px;
+  }
+  @include responsiveHeight(l) {
+    max-height: 800px;
+  }
+}
+
+.custom-text-field-table-import-report {
+  label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-filled {
+    margin: 0;
+    top: 0;
+    color: #7B7B7B;
+    font-size: 12px;
+  }
+
+  div.MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-fullWidth.MuiInputBase-formControl {
+      .MuiInputBase-input.MuiFilledInput-input {
+        padding-top: 10px;
+        color: #3e3e3e;
+        font-size: 12px;
+        font-weight: 500;
+      }
+  }
+}
+
+.pro-labor-collapsible {
+  font-size: 14px;
+}
+
+.icon-rotate {
+  transform: rotate(180deg);
+}
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 24px;
+  justify-content: flex-end;
+
+  .MuiPagination-root {
+    .MuiPagination-ul {
+      font-family: "Open Sans";
+      font-weight: 300;
+      li:first-child {
+        order: 2;
+        margin-left: 24px;
+        margin-right: -7px;
+        .MuiPaginationItem-outlined {
+          border: solid 1px #149372;
+          background: white;
+        }
+        .MuiPaginationItem-rounded {
+          border-radius: 4px 0 0 4px;
+        }
+      }
+      li:nth-child(2) {
+        order: 1;
+        .MuiPaginationItem-outlined {
+          border: solid 1px #bcbcbc;
+          background: white;
+        }
+        .MuiPaginationItem-root {
+          height: 29px;
+        }
+        .input-style {
+          font-family: "Open Sans";
+          font-weight: 300;
+          width: 46px;
+          height: 26px;
+          border-radius: 6px;
+          border: solid 1px #bcbcbc;
+          background-color: #ffffff;
+          text-align: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: 0.875rem;
+          color: #333333;
+        }
+        .text-style {
+          font-size: 0.875rem;
+          color: #333333;
+        }
+      }
+      li:last-child {
+        order: 3;
+        .MuiPaginationItem-outlined {
+          border: solid 1px #149372;
+          background: white;
+        }
+        .MuiPaginationItem-rounded {
+          border-radius: 0 4px 4px 0;
+        }
+      }
+      li {
+        .MuiSvgIcon-root {
+          fill: #149372;
+          stroke-width: -10px;
+          stroke: white;
+        }
+        .MuiPaginationItem-root {
+          min-width: 29px;
+          height: 29px;
+        }
+      }
+    }
+  }
+}
+
+.table-container {
+  tbody {
+    tr td {
+      font-family: "Open Sans";
+      font-size: 12px;
+      color: #3e3e3e;
+      white-space: break-spaces;
+    }
+
+    .row-empty {
+      white-space: nowrap;
+    }
+  }
+
+  .MuiTableCell-head:first-child, .MuiTableCell-body:first-child, .MuiTableCell-head:last-child, .MuiTableCell-body:last-child {
+    display: table-cell;
+  }
+
+  thead {
+    tr th {
+      vertical-align: middle;
+      white-space: break-spaces;
+      min-width: 165px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    tr th:nth-child(1) {
+      min-width: 60px;
+    }
+
+    tr th:nth-child(2) {
+      min-width: 105px;
+    }
+
+    tr th:nth-child(3) {
+      min-width: 130px;
+    }
+
+    tr th:nth-child(4) {
+      min-width: 120px;
+    }
+
+    tr th:nth-child(9) {
+      min-width: 180px;
+    }
+
+    tr th:nth-child(11) {
+      text-align: center;
+    }
+
+    tr th:nth-child(12) {
+      text-align: center;
+    }
+  }
+}

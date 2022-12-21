@@ -1,0 +1,19 @@
+.MuiButtonBase-root.MuiButton-root.MuiButton-text {
+    text-transform: none;
+    font-family: "Open Sans";
+    background: white;
+    border: solid 1px #d8d8d8;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #404040;
+    width: 222px;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    padding: 0 12px;
+}
+
+.downarrow-icon {
+    content: url(../../assets/img/svg/down-arrow.svg);
+}

@@ -1,0 +1,1199 @@
+{
+    "global": {
+        "toast": {
+            "error": {
+                "registerContract": "Erro ao salvar contrato!",
+                "getAllCompanies": "Erro ao listar empresas!",
+                "getAllAccessControls": "Erro ao listar acessos!",
+                "getAllDoctors": "Erro ao listar médicos!",
+                "getCompany": "Erro ao acessar empresa!",
+                "getAccessControl": "Erro ao acessar acesso!",
+                "getDoctor": "Erro ao acessar médico!",
+                "createCompany": "Erro ao criar empresa!",
+                "updateCompany": "Erro ao atualizar empresa!",
+                "activateCompany": "Erro ao atualizar empresa!",
+                "getAllPayments": "Erro ao listar pagamentos!",
+                "getPayment": "Erro ao acessar pagamento!",
+                "createPayment": "Erro ao criar pagamento!",
+                "updatePayment": "Erro ao atualizar pagamento!",
+                "activatePayment": "Erro ao atualizar pagamento!",
+                "getAllLinks": "Erro ao listar vínculos!",
+                "getLink": "Erro ao acessar vínculo!",
+                "createLink": "Erro ao criar vínculo!",
+                "updateLink": "Erro ao atualizar vínculo!",
+                "activateLink": "Erro ao atualizar vínculo!",
+                "getAllResults": "Erro ao listar resultados!",
+                "getResult": "Erro ao acessar resultado!",
+                "createResult": "Erro ao criar resultado!",
+                "updateResult": "Erro ao atualizar resultado!",
+                "activateResult": "Erro ao atualizar resultado!",
+                "getAllServicesTypes": "Erro ao listar tipos de serviços",
+                "getAllContracts": "Erro ao listar contratos!",
+                "getContract": "Erro ao acessar contrato!",
+                "createContract": "Erro ao criar contrato!",
+                "updateContract": "Erro ao atualizar contrato!",
+                "deleteContract": "Erro ao deletar contrato!",
+                "activateContract": "Erro ao atualizar contrato!",
+                "getAllBases": "Erro ao listar bases!",
+                "updateBase": "Erro ao atualizar base!",
+                "getAllRequests": "Erro ao listar solicitações!",
+                "createRequest": "Erro ao criar solicitação!",
+                "updateRequest": "Erro ao editar solicitação!",
+                "resolveRequest": "Erro ao resolver solicitação!",
+                "createBoreCost": "Erro ao criar custo furo!",
+                "getBoreCost": "Erro ao listar custos furo!",
+                "updateBoreCost": "Erro ao atualizar custo furo!",
+                "deleteBoreCost": "Erro ao deletar custo furo!",
+                "getSchedules": "Erro ao listar escalas!",
+                "getOnCalls": "Erro ao listar plantões!",
+                "createDifferentiatedValue": "Erro ao criar valor/hora diferenciado!",
+                "getDifferentiatedValue": "Erro ao listar valor/hora diferenciado!",
+                "updateDifferentiatedValue": "Erro ao atualizar valor/hora diferenciado!",
+                "deleteDifferentiatedValue": "Erro ao deletar valor/hora diferenciado!",
+                "checkIfTheDoctorExistsInDifferentValue": "Erro ao verificar se o médico(a) já existe na tabela valor/hora diferenciado!",
+                "createExtraordinaryExpense": "Erro ao criar despesa extraordinária!",
+                "getExtraordinaryExpenses": "Erro ao listar despesas extraordinárias!",
+                "updateExtraordinaryExpense": "Erro ao atualizar despesa extraordinária!",
+                "deleteExtraordinaryExpense": "Erro ao deletar despesa extraordinária!",
+                "getAllMessages": "Erro ao listar mensagens!",
+                "createMessage": "Erro ao salvar comentário!",
+                "editMessage": "Erro ao editar comentário!",
+                "activateMessage": "Erro ao desarquivar comentário!",
+                "deactivateMessage": "Erro ao arquivar comentário!",
+                "getImportation": "Erro ao listar relatório de importação!",
+                "updateImportation": "Erro ao atualizar relatório de importação!",
+                "getAllAdminReportData": "Erro ao listar dados do relatório!",
+                "getAnticipationValue": "Erro ao listar antecipação de valores!",
+                "createAnticipationValue": "Erro ao criar antecipação de valores!",
+                "getDoctorsClosed": "Erro ao listar médicos em espera!",
+                "updateDoctorClosed": "Erro ao atualizar médicos em espera!",
+                "updateAnticipationValues": "Erro ao atualizar antecipação de valores!",
+                "updateGenerate": "Erro ao gerar fechamento!",
+                "deleteAnticipationValue": "Erro ao deletar antecipação de valor!",
+                "getLogs": "Erro ao listar logs!"
+            },
+            "success": {
+                "createCompany": "Empresa criada com sucesso!",
+                "updateCompany": "Empresa atualizada com sucesso!",
+                "activateCompany": "Empresa atualizada com sucesso!",
+                "createPayment": "Pagamento criado com sucesso!",
+                "updatePayment": "Pagamento atualizado com sucesso!",
+                "activatePayment": "Pagamento atualizado com sucesso!",
+                "createLink": "Vínculo criado com sucesso!",
+                "updateLink": "Vínculo atualizado com sucesso!",
+                "activateLink": "Vínculo atualizado com sucesso!",
+                "createResult": "Resultado criado com sucesso!",
+                "updateResult": "Resultado atualizado com sucesso!",
+                "activateResult": "Resultado atualizado com sucesso!",
+                "createContract": "Contrato criado com sucesso!",
+                "updateContract": "Contrato atualizado com sucesso!",
+                "deleteContract": "Contrato deletado com sucesso!",
+                "activateContract": "Contrato atualizado com sucesso!",
+                "updateBase": "Base atualizada com sucesso!",
+                "createRequest": "Solicitação criada com sucesso!",
+                "updateRequest": "Solicitação editada com sucesso!",
+                "resolveRequest": "Solicitação resolvida com sucesso!",
+                "createBoreCost": "Custo furo criado com sucesso!",
+                "updateBoreCost": "Custo furo atualizado com sucesso!",
+                "deleteBoreCost": "Custo furo deletado com sucesso!",
+                "createDifferentiatedValue": "Valor/hora diferenciado criado com sucesso!",
+                "updateDifferentiatedValue": "Valor/hora diferenciado atualizado com sucesso!",
+                "deleteDifferentiatedValue": "Valor/hora diferenciado deletado com sucesso!",
+                "createExtraordinaryExpense": "Despesa extraordinária criada com sucesso!",
+                "updateExtraordinaryExpense": "Despesa extraordinária atualizada com sucesso!",
+                "deleteExtraordinaryExpense": "Despesa extraordinária deletada com sucesso!",
+                "createMessage": "Comentário salvo com sucesso!",
+                "editMessage": "Comentário editado com sucesso!",
+                "activateMessage": "Comentário desarquivado com sucesso!",
+                "deactivateMessage": "Comentário arquivado com sucesso!",
+                "updateImportation": "Relatório de importação atualizado com sucesso!",
+                "createAnticipationValue": "Antecipação de valores criada com sucesso!",
+                "updateDoctorClosed": "Médicos em espera atualizado com sucesso!",
+                "updateAnticipationValues": "Antecipação de valores atualizada com sucesso!",
+                "updateGenerate": "Fechamento gerado com sucesso!",
+                "deleteAnticipationValue": "Antecipação de valor deletada com sucesso!"
+            }
+        },
+        "tooltip": {
+            "filter":"Filtre aqui sua coluna"
+        },
+
+        "tag": {
+            "ok": "Ok",
+            "active": "Ativo",
+            "pendency": "Pendência",
+            "adjusted": "Ajustado",
+            "doctorAdjustment": "Ajuste médico",
+            "adminAdjustment": "Ajuste admin",
+            "inactive": "Inativo",
+            "correction": "Correção",
+            "contested": "Contestado",
+            "notRegistered": "Não Registrado",
+            "rejected": "Rejeitado",
+            "canceled": "Cancelado",
+            "generated": "Gerado"
+        },
+        "status": {
+            "OK": "OK",
+            "PENDING": "Pendente",
+            "REJECTED": "Rejeitado",
+            "ADJUSTED": "Ajustado",
+            "CORRECTION": "Pendência Médico",
+            "CONTESTED": "Pendência Admin",
+            "PROGRAMMED": "Programado",
+            "ATTENDANCE": "Em atendimento",
+            "ADJUSTED_ADMIN": "Pendência Médico",
+            "ADJUSTED_DOCTOR": "Pendência Admin",
+            "NOT_REGISTERED": "Não Previsto",
+            "CANCELED": "Cancelado"
+        },
+        "button": {
+            "new": "Adicionar novo",
+            "archived": "Arquivados",
+            "less": "Menos",
+            "most": "Mais",
+            "save": "Salvar",
+            "return": "Voltar",
+            "edit": "Editar",
+            "delete": "Excluir",
+            "submit": "Enviar",
+            "confirm": "Confirmar"
+        },
+        "filter": {
+            "title": "Filtrar por ...",
+            "month": {
+                "title": "Selecione o mês",
+                "textField": {
+                    "january": "Janeiro",
+                    "february": "Fevereiro",
+                    "march": "Março",
+                    "april": "Abril",
+                    "may": "Maio",
+                    "june": "Junho",
+                    "july": "Julho",
+                    "august": "Agosto",
+                    "september": "Setembro",
+                    "october": "Outubro",
+                    "november": "Novembro",
+                    "december": "Dezembro"
+                }
+            },
+            "year": {
+                "title": "Selecione o ano"
+            }
+        }
+    },
+    "serviceTypeInput": {
+        "confirmDeleteTittle": "Confirmar Exclusão",
+        "confirmDeleteMessage": "Deseja excluir esse serviço?",
+        "add": "Adicionar novo serviço",
+        "edit": "Editar",
+        "delete": "Excluir"
+    },
+    "hiredInput": {
+        "confirmDeleteTittle": "Confirmar Exclusão",
+        "confirmDeleteMessage": "Deseja excluir?",
+        "add": "Adicionar novo",
+        "edit": "Editar",
+        "delete": "Excluir"
+    },
+    "contractingPartyInput": {
+        "confirmDeleteTittle": "Confirmar Exclusão",
+        "confirmDeleteMessage": "Deseja excluir?",
+        "add": "Adicionar novo",
+        "edit": "Editar",
+        "delete": "Excluir"
+    },
+    
+    "management":{
+        "tabs":{
+            "companyData": "Dados da empresa",
+            "payments": "Natureza do Pagamento",
+            "links": "Vínculos",
+            "results": "Centro de Resultados"
+        },
+        "tableHeaders":{
+            "code": "Código",
+            "company": "Empresa",
+            "companyName": "Razão Social (abreviada)",
+            "status": "Status",
+            "paymentType": "Tipo de Pagamento",
+            "prepaymentType": "Pagamento Antecipado",
+            "sankhyaCode": "Código Sankhya",
+            "acronym": "Sigla",
+            "description": "Descrição",
+            "contract": "Contrato",
+            "year": "Ano",
+            "linkName": "Nome",
+            "prepaymentCode": "Código Antecipação"
+        },
+        "buttons":{
+            "edit": "Editar",
+            "activate": "Ativar",
+            "deactivate": "Inativar",
+            "companyData": "Adicionar empresa",
+            "payments": "Adicionar natureza",
+            "links": "Adicionar Vínculo",
+            "save": "Salvar",
+            "goBack": "Voltar",
+            "send": "Enviar",
+            "sendNewPassword": "Salvar senha",
+            "ConfirmedPass": "Ir para o login"
+        },
+        "status": {
+            "active": "Ativo",
+            "inactive": "Inativo"
+        },
+        "title": {
+            "management": "Gerenciamento",
+            "modal": {
+                "companyData": "Editar empresa",
+                "payments": "Editar natureza",
+                "links": "Editar Vínculo",
+                "results": "Editar Resultado"
+            }
+        },
+        "forgotPassword":{
+            "title": "Esqueçeu a senha?",
+            "subTitle": "Não tem problema. Digite seu email para receber o link de recuperação.",
+            "send": "Email enviado!",
+            "verifyEmail": "Confira a sua caixa de emails para recuperar o seu acesso.",
+            "spam": "Se não encontrou o email, cheque seu spam ou tente novamente.",
+            "resend": "Enviar Novamente",
+            "Error": "Email não encontrado!",
+            "changeTitle": "Altere sua senha",
+            "changeSubTitle": "Insira a sua nova senha para acessar.",
+            "ChangePassword": "Senha alterada com sucesso!",
+            "TextPassConfirm": "Agora é só fazer o login com a sua nova senha.",
+            "IsntEqualsPasswords": "Senhas são diferentes"
+        },
+        "textField": {
+            "companyName": "Razão social (abreviada)",
+            "company": "Empresa",
+            "code": "Código",
+            "paymentType": "Tipo de pagamento",
+            "prepaymentType": "Pagamento antecipado",
+            "prepaymentCode": "Código Antecipação",
+            "linkName": "Nome do vínculo",
+            "Email": "Insira seu email",
+            "enterYourPassword": "Insira a nova senha",
+            "RepeatPassword": "Confirme a senha"
+
+        },
+        "fieldError": {
+            "required": "Campo obrigatório",
+            "selectionRequired": "Selecione uma opção",
+            "theDoctorAlreadyExists": "O médico já está na tabela, por favor procure ele e clique em atualizar",
+            "theDateAlreadyExists": "A data informada coincide com outro período já cadastrado para o médico, por favor verifique",
+            "valueHigherThanAllowed": "Tem que ser menor que o registrado em importações"
+        }
+    },
+
+    "contractRegister": {
+        "header": {
+            "title": "Adicionar Contrato",
+            "titleSecond": "Permitir controle de horas pelo aplicativo"
+        },
+        "body": {
+            "generalDate": {
+                "title": "Dados Gerais do Contrato",
+                "titleEmployer": "Dados Gerais do Contratante",
+                "titleHired": "Dados Gerais da Contratada",
+                "textField": {
+                    "contractNumber": "Número do Contrato",
+                    "dateStart": "Data de Início",
+                    "dateEnd": "Data Final",
+                    "realEndDate": "Prazo Final",
+                    "resultsCenter": "Centro de Resultado",
+                    "code": "Código Sankhya",
+                    "paymentDate": "Data de Pgto. da Folha",
+                    "received": "Prazo de Recebimento",
+                    "hiredName": "Nome da Contratada",
+                    "hiredAddress": "Endereço da Contratada",
+                    "bid": "Referencial de Licitação",
+                    "process": "Processo Administrativo",
+                    "employerName": "Nome do Contratante",
+                    "employerAddress": "Endereço do Contratante",
+                    "number": "Número",
+                    "cep": "CEP",
+                    "cnpj": "CNPJ",
+                    "city": "Selecione a cidade",
+                    "state": "Selecione o estado",
+                    "guarantee": "Garantia Contratual",
+                    "readjustment": "Índice de Reajuste",
+                    "macroService": "Serviço Macro"
+                },
+                "label": {
+                    "city": "Cidade",
+                    "state": "Estado"
+                },
+                "addNewService": "Adicionar novo serviço",
+                "addNewContractingParty": "Adicionar nova contratante",
+                "editContractingParty": "Editar contratante",
+                "addNewHired": "Adicionar nova contratada",
+                "editHired": "Editar contratada"
+            },
+            "additive": {
+                "title": "Aditivo",
+                "textField": {
+                    "additiveContract": "Aditivo de Contrato",
+                    "period": "Prazo Aditivo em Dias",
+                    "attach": "Anexo",
+                    "periodStart": "Prazo de Início",
+                    "date": "Data Inicial",
+                    "endDate": "Data Final",
+                    "button": "ADICIONAR NOVO ADITIVO",
+                    "attachButton": "ANEXAR"
+                }
+            },
+            "placeOperation": {
+                "title": "Lote",
+                "titleItem": "Item",
+                "textField": {
+                    "name": "Nome da unidade",
+                    "address": "Endereço",
+                    "number": "Número",
+                    "cep": "CEP",
+                    "service": "Tipo de Serviço",
+                    "discount": "Valor de Desconto Sócio",
+                    "reference": "Referência",
+                    "process": "Processo Administrativo",
+                    "item": "Item",
+                    "object": "Objeto",
+                    "amount": "Qtde.",
+                    "amountReceivable": "Valor a receber por hora",
+                    "amountPayable": "Valor hora a pagar/sócio",
+                    "button": "ADICIONAR NOVO LOTE",
+                    "buttonItem": "ADICIONAR NOVO ITEM",
+                    "newService": "Adicionar novo serviço",
+                    "editService": "Editar serviço",
+                    "rpaPayableAmount": "Valor hora a pagar/RPA",
+                    "pjPayableAmount": "Valor hora a pagar/PJ"
+                }
+            },
+
+            "responsibleControl": {
+                "title": "Responsável pelo Controle de Acesso",
+                "textField": {
+                    "responsibleAccess": "Responsável de Acesso",
+                    "responsibleClose": "Responsável de Fechamento"
+                }
+            },
+
+            "doctorCoordinator": {
+                "title": "Médico(a) Coordenador(a)",
+                "textField": {
+                    "name": "Nome do Médico (a)",
+                    "hours": "Mínimo de Horas",
+                    "value": "Valor da Hora",
+                    "valueFixed": "Valor Fixo",
+                    "button": "ADICIONAR NOVO MÉDICO"
+                }
+            },
+
+            "doctorAuthorized": {
+                "title": "Médicos Autorizados",
+                "textField": {
+                    "name": "Insira o nome do médico"
+                }
+            },
+
+            "delayParameters" :{
+                "title": "Parâmetros de Atraso",
+                "textField":{
+                    "delayTolerance": "Tolerância Atraso Entrada",
+                    "integralDelayTolerance": "Tolerância de Atraso de Posto",
+                    "exitDelayTolerance": "Tolerância Saída Antecipada",
+                    "accumulateDelayTolerance": "Acumular Atraso"
+                }
+            },
+            "files": {
+                "title": "Arquivos",
+                "textField": {
+                    "attach": "Anexar Contratos",
+                    "attachContract": "Anexar Informativos do Contrato",
+                    "attachDocument": "Inserir anexo",
+                    "button": "ANEXAR"
+                }
+            },
+
+            "observation": {
+                "title": "Observações",
+                "textField": {
+                    "insert": "Insira as observações"
+                }
+            }
+        },
+
+        "footer": {
+            "cancel": "Cancelar",
+            "save": "Salvar contrato",
+            "saving": "Salvando"
+        }
+    },
+    "contracts": {
+        "tableHeaders": {
+            "CR": "CR",
+            "contractor": "Contratante",
+            "adm": "Adm de Acesso",
+            "city": "Cidade",
+            "state": "UF",
+            "serviceType": "Tipo de Serviço",
+            "status": "Status",
+            "contractNumber": "Número",
+            "endDate": "Prazo final"
+        },
+        "tableContent": {
+            "status": {
+                "active": "Ativo",
+                "inactive": "Inativo"
+            }
+        },
+        "button": {
+            "add": "Adicionar contrato"
+        },
+        "title": "Contratos",
+        "one-month": "1 mês para vencimento",
+        "two-month": "2 meses para vencimento",
+        "archived-contract": "Contrato inativo"
+    },
+    "doctors": {
+        "tableHeaders": {
+            "CR": "CR",
+            "contractor": "Contratante",
+            "adm": "Adm de Acesso",
+            "city": "Cidade",
+            "state": "UF",
+            "serviceType": "Tipo de Serviço",
+            "status": "Status",
+            "contractNumber": "Número",
+            "endDate": "Prazo final"
+        },
+        "tableContent": {
+            "status": {
+                "active": "Ativo",
+                "inactive": "Inativo"
+            }
+        },
+        "button": {
+            "add": "Adicionar contrato"
+        },
+        "title": "Médicos",
+        "one-month": "1 mês para vencimento",
+        "two-month": "2 meses para vencimento",
+        "archived-contract": "Contrato inativo"
+    },
+    "contractDetail": {
+        "header": {
+            "title": "Contratos",
+            "data": "Dados",
+            "base": "Base",
+            "control": "Controle de Acesso",
+            "request": "Solicitações",
+            "cost": "Custos",
+            "message": "Mensagens",
+            "logs": "Logs do Sistema"
+        },
+
+        "data": {
+            "title": "Fundação de Saúde do Município de Americana - FUSAME",
+            "buttons": {
+                "download": "DOWNLOAD",
+                "edit": "EDITAR DOCUMENTO"
+            },
+
+            "generalData": {
+                "title": "Dados Gerais",
+                "textField": {
+                    "contractNumber": "Número do Contrato",
+                    "startDate": "Data de Início",
+                    "finalDate": "Data Final",
+                    "realFinalDate": "Prazo final",
+                    "resultsCenter": "Centro de Resultado",
+                    "code": "Código Sankhya",
+                    "paymentDate": "Data de Pagamento da Folha",
+                    "receipt": "Prazo de Recebimento",
+                    "hired": "Contratada",
+                    "name": "Nome",
+                    "cnpj": "CNPJ",
+                    "bidding": "Referencial de Licitação",
+                    "process": "Processo Administrativo",
+                    "contractor": "Contratante",
+                    "contractorCnpj": "CNPJ Contratante",
+                    "address": "Endereço",
+                    "number": "Número",
+                    "cep": "CEP",
+                    "city": "Cidade",
+                    "state": "Estado",
+                    "guarantee": "Garantia Contratual",
+                    "readjustment": "Índice de Reajuste"
+                }
+            },
+            
+            "place": {
+                "title": "Lote",
+                "titleItem": "Item",
+                "textField": {
+                    "name": "Nome da Unidade",
+                    "address": "Endereço",
+                    "number": "Número",
+                    "cep": "CEP",
+                    "type": "Tipo de Serviço",
+                    "value": "Valor de Desconto - Sócio",
+                    "reference": "Referência",
+                    "process": "Processo Administrativo",
+                    "item": "Item",
+                    "object": "Objeto",
+                    "amount": "Quantidade",
+                    "receivableValue": "Valor a Receber por hora",
+                    "paymentRpaAmount": "Valor a pagar/RPA",
+                    "paymentPjAmount": "Valor a pagar/PJ",
+                    "paymentValue": "Valor a Pagar - Sócio"
+                }
+            },
+
+            "responsible": {
+                "title": "Responsável pelo Controle de Acesso",
+                "textField": {
+                    "responsibleAcess": "Responsável de Acesso",
+                    "responsibleClosing": "Responsável de Fechamento"
+                }
+            },
+
+            "coordinatingDoctors": {
+                "title": "Médicos Coordenadores",
+                "textField": {
+                    "name": "Nome do (a) Médico (a)",
+                    "hours": "Mínimo de Horas",
+                    "hourValue": "Valor da Hora",
+                    "fixedValue": "Valor Fixo"
+                }
+            },
+
+            "delays": {
+                "title": "Parâmetros de Atraso",
+                "entry": "Tolerância Atraso Entrada",
+                "exit": "Tolerância Saída Antecipada",
+                "integral": "Tolerância de Atraso de Posto"
+            },
+            "additive": {
+                "title": "Aditivos",
+                "contractAdditive": "Aditivo de Contrato",
+                "additiveTerm": "Prazo Aditivo em Dias",
+                "startTerm": "Prazo de Início",
+                "startDate": "Data Inicial",
+                "realFinalDate": "Prazo final",
+                "attach": "Anexo"
+            },
+            "authorizedDoctors": {
+                "title": "Médicos Autorizados"
+            },
+            "files": {
+                "title": "Arquivos"
+            },
+            "note": {
+                "title": "Observações"
+            },
+            "globalValue": {
+                "title": "Valor Global"
+            },
+
+            "monthlyValue": {
+                "title": "Valor Mensal",
+                "textField": {
+                    "current": "Atual",
+                    "budget": "Orçamento",
+                    "caption": "*Gráfico financeiro de acompanhamento do faturamento mês a mês e percentual relativo ao valor global."
+                }
+            }
+        },
+        "base": {
+            "title": "Fundação de Saúde do Município de Americana - FUSAME",
+            "tooltip": "Filtre aqui sua coluna",
+            "base": "BASE",
+            "table": {
+                "crm": "CRM",
+                "name": "Nome do médico",
+                "cpf": "CPF Titular",
+                "cnpj": "CNPJ Titular",
+                "link": "Vínculo",
+                "pj": "PJ Médico",
+                "payer": "Emp. Pagadora",
+                "code": "Cód. Empresa",
+                "payment": "Tipo Pgto",
+                "earlyPayment": "Tipo Pgto Antecipado",
+                "inclusionCnes": "Inclusão do CNES",
+                "exclusionCnes": "Exclusão do CNES"
+            }
+        },
+        "control": {
+            "control": "CONTROLE DE ACESSO",
+            "filter": "Filtrar por...",
+            "table": {
+                "crm": "CRM",
+                "scale": "Escala",
+                "name": "Nome do médico",
+                "local": "Lote",
+                "day": "Dia",
+                "month": "Mês",
+                "year": "Ano",
+                "status": "Status"
+            },
+            "dropdown": {
+                "filter": {
+                    "period": "Filtrar por Período",
+                    "scale": "Filtrar escala",
+                    "local": "Filtrar local de atuação",
+                    "status": "Filtrar status",
+                    "crm": "Filtrar CRM",
+                    "name": "Filtrar por nome do médico",
+                    "day": "Filtrar por dia",
+                    "month": "Filtrar por mês",
+                    "year": "Filtrar por ano",
+                    "specialty": "Filtrar por especialidade",
+                    "sector": "Filtrar por setor",
+                    "date": "Filtrar por data",
+                    "estimatedTime": "Filtrar por horário previsto",
+                    "finalTime": "Filtrar por horário realizado",
+                    "time": "Filtrar por horário realizado",
+                    "hours": "Filtrar por total de horas",
+                    "cpf": "Filtrar por CPF",
+                    "cnpj": "Filtrar por CNPJ",
+                    "link": "Filtrar por vínculo",
+                    "pj": "Filtrar por nome da PJ",
+                    "payer": "Filtrar por empresa pagadora",
+                    "code": "Filtrar por código da empresa",
+                    "payment": "Filtrar por tipo de pagamento",
+                    "earlyPayment": "Filtrar por tipo de pagamento antecipado",
+                    "inclusionCnes": "Filtrar por data de inclusão do CNES",
+                    "exclusionCnes": "Filtrar por data de exclusão do CNES",
+                    "doctor": {
+                        "crmNumber": "Filtrar CRM",
+                        "name": "Filtrar por nome do médico",
+                        "identificationNumber": "Filtrar por CPF",
+                        "legalEntityIdentificationNumber": "Filtrar por CNPJ",
+                        "accountOwnerName": "Filtrar por nome da PJ"
+                    },
+                    "bond": {
+                        "name": "Filtrar por vínculo",
+                        "paymentNature": {
+                            "paymentType": "Filtrar por tipo de pagamento",
+                            "prepaymentType": "Filtrar por tipo de pagamento antecipado"
+                        }
+                    },
+                    "companyData": {
+                        "company": "Filtrar por nome da empresa pagadora",
+                        "code": "Filtrar por código da empresa"
+                    },
+                    "cnesInclusion": "Filtrar por data de inclusão do CNES",
+                    "cnesExclusion": "Filtrar por data de exclusão do CNES"
+                },
+                "local": "Insira o local de atuação",
+                "scale": "Insira a escala",
+                "crm": "Insira o CRM",
+                "name": "Insira o nome",
+                "day": "Insira o dia",
+                "month": "Insira o mês",
+                "year": "Insira o ano",
+                "pendency": "Pendência",
+                "adjustment": "Ajuste",
+                "specialty": "Insira a especialidade",
+                "sector": "Insira o setor",
+                "date": "Insira a data",
+                "estimatedTime": "Insira o horário previsto",
+                "finalTime": "Insira o horário realizado",
+                "time": "Insira o horário realizado",
+                "hours": "Insira o total de horas",
+                "cpf": "Insira o CPF",
+                "cnpj": "Insira o CNPJ",
+                "link": "Insira o vínculo",
+                "pj": "Insira o nome",
+                "payer": "Insira o nome",
+                "code": "Insira o código",
+                "payment": "Insira o tipo",
+                "earlyPayment": "Insira o tipo",
+                "inclusionCnes": "Insira a data",
+                "exclusionCnes": "Insira a data",
+                "ok": "Ok",
+                "title": {
+                    "clean": "Limpar Filtros",
+                    "cancel": "CANCELAR",
+                    "apply": "APLICAR",
+                    "selectAll": "Selecionar Todos"
+                },
+                "doctor": {
+                    "crmNumber": "Insira o CRM",
+                    "name": "Insira o nome",
+                    "identificationNumber": "Insira o CPF",
+                    "legalEntityIdentificationNumber": "Insira o CNPJ",
+                    "accountOwnerName": "Insira o nome"
+                },
+                "bond": {
+                    "name": "Insira o vínculo",
+                    "paymentNature": {
+                        "paymentType": "Insira o tipo",
+                        "prepaymentType": "Insira o tipo"
+                    }
+                },
+                "companyData": {
+                    "company": "Insira o nome",
+                    "code": "Insira o código"
+                },
+                "cnesInclusion": "Insira a data",
+                "cnesExclusion": "Insira a data"
+            },
+            "modal": {
+                "control": "Controle de Acesso",
+                "calendar": "Calendário",
+                "requests": "Solicitações",
+                "show": "Mostrar",
+                "contract": "Este contrato",
+                "all": "Todos",
+                "today": "Hoje",
+
+                "table": {
+                    "scale": "Escala",
+                    "specialty": "Especialidade",
+                    "sector": "Setor",
+                    "date": "Data",
+                    "time": "Horário Realizado",
+                    "finalTime": "Horário Realizado",
+                    "estimatedTime": "Horário Previsto",
+                    "hours": "Total de Horas",
+                    "status": "Status",
+                    "displayContract": "Exibir outros contratos",
+                    "today": "Hoje",
+                    "sunday": "Domingo",
+                    "monday": "Segunda",
+                    "tuesday": "Terça",
+                    "wednesday": "Quarta",
+                    "thursday": "Quinta",
+                    "friday": "Sexta",
+                    "saturday": "Sábado",
+                    "semiHall": "Semicorretor",
+                    "emergency": "Emergência",
+                    "hall": "Corredor",
+                    "morning": "Manhã",
+                    "afternoon": "Tarde",
+                    "night": "Noite",
+                    "cinderella": "Cinderela",
+                    "newSolicitation": "Nova Solicitação",
+                    "solicitation": "Resolver Solicitação"
+                }
+            }
+        },
+        "request": {
+            "title":"SOLICITAÇÕES",
+            "table": {
+                "crm": "CRM",
+                "doctorName": "Nome do médico",
+                "scale": "Escala",
+                "sector": "Setor",
+                "day": "Dia da Semana",
+                "date": "Data",
+                "estimatedTime": "Horário Previsto",
+                "expectedWorkload": "Carga horária Prevista",
+                "time": "Horário Realizado",
+                "accomplishedWorkload": "Carga Horária Realizada",
+                "status": "Status"
+            },
+            "modal": {
+                "solicitation": "Solicitação",
+                "newSolicitation": "Nova Solicitação",
+                "resolveSolicitation": "Resolver Solicitação",
+                "performancePlace": "Local de Atuação",
+                "resolve": "Resolver Acesso não Registrado",
+                "selectScale": "Selecione a Escala",
+                "select": "Selecione o Plantão",
+                "selectSecond": "Selecionar",
+                "justificationAswer": "Responda à justificativa",
+                "justificationInsert": "Insira a justificativa",
+                "place": "Local",
+                "scale": "Escala",
+                "date": "Data do acesso",
+                "number": "Número",
+                "period": "Período",
+                "accomplishedTime": "Horário Realizado Médico",
+                "justifiedTime": "Horário Justificado Médico",
+                "startTime": "Hora da entrada",
+                "endTime": "Hora da saída",
+                "comment": "Comentário do Admin",
+                "whyNot": "Por que não alterou",
+                "justification": "Justificativa",
+                "attachment": "Anexo",
+                "underAnalysis": "Em análise",
+                "approved": "Aprovado",
+                "disapproved": "Reprovado",
+                "correction": "Correção",
+                "enterComment": "Insira o comentário",
+                "enterAttachment": "Inserir anexo",
+                "adjust": "Ajustar Hora de Entrada e Saída"
+            },
+            "tooltip": {
+                "solicitation": "Nova Solicitação",
+                "resolveSolicitation": "Resolver Solicitação",
+                "editSolicitation": "Editar Solicitação",
+                "resolveCorrection": "Resolver Correção",
+                "resolveContested": "Resolver Contestado",
+                "resolveNotRegistered": "Resolver Não Registrado",
+                "enterAttachment": "Inserir anexo",
+                "cancelAccess": "Cancelar Acesso",
+                "concludeAccess": "Concluir Acesso",
+                "completeAccess" : "Completar Acesso"
+            }
+        },
+        "cost": {
+            "title": "CUSTOS FURO",
+            "titleSecond": "VALOR/HORA DIFERENCIADO",
+            "titleThird": "DESPESAS EXTRAORDINÁRIAS",
+            "table": {
+                "crm": "CRM",
+                "doctorName": "Nome do(a) Médico(a)",
+                "scale": "Escala",
+                "sector": "Setor",
+                "day": "Dia da Semana",
+                "date": "Data",
+                "initialDate": "Data Inicial",
+                "finalDate": "Data Final",
+                "inclusionDate": "Data de Inclusão",
+                "changeDate": "Data de Alteração",
+                "time": "Horário",
+                "value": "Valor",
+                "description": "Descrição"
+            },
+            "modal": {
+                "title": "Novo Custo Furo",
+                "titleSecond": "Novo Valor/Hora Diferenciado",
+                "titleThird": "Nova Despesa Extraordinária",
+                "titleFourth": "Atualizar Valor/Hora Diferenciado",
+                "titleFifth": "Editar Custo Furo",
+                "titleSixth": "Editar Valor/Hora Diferenciado",
+                "titleSeventh": "Editar Despesa Extraordinária",
+                "subtitle": "Insira a data final do valor atual",
+                "subtitleSecond": "Insira a data de início do novo valor",
+                "searchDoctor": "Busque o médico(a) ou digite o CRM",
+                "insertCrm": "O CRM deve ser inserido caso não encontre o médico no formato 000/PR",
+                "selectScale": "Selecione a Escala",
+                "selectDuty": "Selecione o Plantão",
+                "insertValueHour": "Insira o Valor/Hora",
+                "selectDoctor": "Selecione o(a) Médico(a)",
+                "initialDate": "Data de Início",
+                "finalDate": "Data Final",
+                "blankDate": "A data final pode ficar em branco, caso não tenha sido definida.",
+                "insertValue": "Insira o Valor",
+                "describeCost": "Descreva o Custo",
+                "doctor": "Médico(a)",
+                "insertValueExpense": "Insira o valor da despesa"
+            },
+            "buttons": {
+                "delete": "Excluir",
+                "edit": "Editar",
+                "save": "Salvar",
+                "goBack": "Voltar",
+                "update": "Atualizar valor/hora"
+            }
+        },
+        "message": {
+            "title": "MENSAGENS",
+            "buttonLess": "Menos",
+            "buttonMost": "Menos",
+            "modal": {
+                "title": "Arquivados",
+                "titleSecond": "Editar comentário",
+                "titleThird": "Histórico de versões"
+            },
+            "tooltip": {
+                "edit": "Editar",
+                "history": "Histórico de versões",
+                "toFile": "Arquivar"
+            }
+        },
+        "logs": {
+            "title": "LOGS DO SISTEMA",
+            "table": {
+                "firstTextField": "Alterou o campo",
+                "secondTextField": "para o valor:"
+            },
+            "types": {
+                "adjustedFinalTime": "Hora Final Ajustada", 
+                "adjustedStartTime": "Hora Início Ajustada", 
+                "doctorJustification": "Justificativa do Médico", 
+                "doctorFile": "Arquivo Médico", 
+                "status": "Status", 
+                "seen": "Visto", 
+                "name": "Nome", 
+                "email": "Email", 
+                "startTime": "Hora de Início", 
+                "endTime": "Hora de Término", 
+                "accessControl": "Controle de Acesso", 
+                "originator": "Origem", 
+                "initialDoctorLocation": "Localização Inicial do Médico", 
+                "doctor": "Médico", 
+                "onCall": "Plantão", 
+                "contractNumber": "Número do Contrato",
+                "OK": "OK",
+                "PENDING": "Pendente",
+                "REJECTED": "Rejeitado",
+                "ADJUSTED": "Ajustado",
+                "CORRECTION": "Pendência Médico",
+                "CONTESTED": "Pendência Admin",
+                "PROGRAMMED": "Programado",
+                "ATTENDANCE": "Em atendimento",
+                "ADJUSTED_ADMIN": "Pendência Médico",
+                "ADJUSTED_DOCTOR": "Pendência Admin",
+                "NOT_REGISTERED": "Não Previsto",
+                "CANCELED": "Cancelado",
+                "ACTIVE": "Ativo",
+                "INACTIVE": "Inativo",
+                "PENDECY": "Pendência",
+                "GENERATED": "Gerado"
+            }
+        }
+    },
+    "report": {
+        "admin": {
+            "title": "Relatórios",
+            "button": "Agrupar itens",
+            "buttonSecond": "Itens ocultados",
+            "buttonThird": "Filtrar colunas",
+            "buttonFourth": "Apenas plantões com médico",
+            "buttonReport": "Selecione o Relatório",
+            "buttonDoctor": "Médico",
+            "buttonOnCall": "Plantão",
+            "buttonSchedule": "Escala",
+            "buttonContract": "Contrato",
+            "subtitle": "RELATÓRIO ADMIN",
+            "subtitleSecond": "LISTA DE RELATÓRIOS",
+            "date": "Data",
+            "value": "Valor",
+            "table": {
+                "idDoctor": "ID Médico",
+                "nameDoctor": "Nome do(a) Médico(a)",
+                "crmNumber": "CRM",
+                "cpfNumber": "CPF",
+                "cnpjNumber": "CNPJ",
+                "doctorCity": "Município",
+                "doctorState": "Estado",
+                "crmState": "Estado (CRM)",
+
+                "idContract": "ID Contrato",
+                "contractNumber": "Número do Contrato",
+                "sankhyaCode": "Código Sankhya",
+                "resultsCenter": "Centro de Resultado",
+                "serviceTypeContractMacro": "Serviço",
+
+                "nameContractor": "Contratante",
+                "cityContractor": "Município",
+                "stateContrator": "Estado",
+
+                "hiredName": "Contratada",
+                "hiredCity": "Município",
+                "hiredState": "Estado",
+
+                "accessResponsible": "Responsável de Acesso",
+                "closureResponsible": "Responsável de Fechamento",
+
+                "idSchedule": "ID Escala",
+                "nameSchedule": "Escala",
+                "scheduleStartDate": "Data de Início",
+                "scheduleEndDate": "Data Final",
+                "unitName": "Unidade",
+                "unitObject": "Objeto",
+                "unitServiceType": "Serviço",
+
+                "idOnCall": "ID Plantão",
+                "onCallDate": "Data",
+                "onCallStartTime": "Início",
+                "onCallEndTime": "Final",
+                "onCallShift": "Turno",
+                "onCallDay": "Dia",
+                "onCallSector": "Setor",
+                "onCallSpeciality": "Especialidade",
+                "onCallDateMonth": "Mês",
+                "onCallDateYear": "Ano",
+
+                "bond": "Vínculo",
+                "paymentType": "Tipo de Pagamento",
+                "PrePaymentType": "Tipo de Pagamento Antecipado",
+
+                "totalAmountOnCallExpected": "Valor Total Previsto do Plantão",
+                "totalHoursOnCallExpected": "Total de Horas Previsto do Plantão",
+                "hourValueOnCallExpected": "Valor/Hora Previsto do Plantão",
+                "hourValueExpectedToReceive": "Valor/Hora Previsto Contrato a Receber",
+                "totalAmountExpectedToReceive": "Valor Total Previsto a Receber",
+                "hourValueDifferentCostDoctor": "Valor/Hora Diferenciado ao Médico",
+                "hourValueExpectedDoctor": "Valor/Hora Previsto ao Médico",
+                "totalAmountExpectedDoctor": "Valor Total Previsto ao Médico",
+
+                "finalTimeDoctorOnCall": "Hora de Saída do Médico",
+                "initialTimeDoctorOnCall": "Hora de Entrada do Médico",
+                "totalHoursWorkedDoctor": "Total de Horas Realizado pelo Médico",
+                "adjustedFinalTime": "Hora de Saída Ajustada",
+                "adjustedStartTime": "Hora de Entrada Ajustada",
+                "adjustedTotalHoursWorked": "Total de Horas Ajustada",
+                "statusAccessDoctor": "Status do Acesso",
+                "valueHourPaidDoctor": "Valor/Hora Pago ao Médico",
+                "totalAmountPaidDoctor": "Valor Total Pago ao Médico",
+                "nameDoctorBore": "Médico Furo",
+                "valueHourDoctorBore": "Valor/Hora do Furo",
+                "amountPaidDoctorBore": "Valor Total Pago ao Médico Furo",
+            
+                "extraordinaryExpenseAmount": "Valor de Despesa Extraordinária",
+                "descriptionExtraordinaryExpense": "Despesa Extraordinária",
+
+                "nameDoctorCoordinator": "Coordenador",
+                "valueFixedCoordinator": "Valor Fixo do Coordenador",
+                "valueHourCoordinator": "Valor/Hora do Coordenador",
+                "minimalHourCoordinator": "Mínimo de Horas do Coordenador",
+
+                "reportName": "Nome do Arquivo",
+                "creationDate": "Data de Criação",
+                "modifiedDate": "Data de Modificação",
+
+                "onCallTime": "Horário",
+                "contract": "Contrato"
+            },
+
+            "tab": {
+                "report": "Relatório",
+                "list": "Lista"
+            },
+
+            "modal": {
+                "title": "Itens ocultados",
+                "titleSecond": "Salvar relatório",
+                "titleThird": "Editar nome",
+                "insert": "Nome do relatório",
+                "message": {
+                    "confirm": "Modifique o nome do arquivo ou sobrescreva o relatório existente.",
+                    "empty": "Insira um nome válido!"
+                }
+            },
+            "dropdown": {
+                "group": {
+                    "TOTAL_AMOUNT_ON_CALL_EXPECTED": "Valor Total Previsto Plantão",
+                    "HOUR_VALUE_EXPECTED_TO_RECEIVE": "Valor/Hora Previsto Receber",
+                    "TOTAL_AMOUNT_EXPECTED_TO_RECEIVE": "Valor Total Previsto a Receber",
+                    "TOTAL_AMOUNT_EXPECTED_DOCTOR": "Valor Total Previsto Médico",
+                    "TOTAL_HOURS_DOCTOR_ACCOMPLISHED": "Total Horas Realizado Médico",
+                    "TOTAL_AMOUNT_PAID_DOCTOR": "Valor Total Pago ao Médico",
+                    "AMOUNT_PAID_DOCTOR_BORE": "Valor Total Pago Médico Furo",
+                    "EXTRAORDINARY_EXPENSE_AMOUNT": "Valor despesa extraordinária"
+                },
+                "button": {
+                    "undo": "Desfazer"
+                },
+                "label": {
+                    "reportName": "Nome do Relatório",
+                    "doctor": "Nome do(a) Médico(a) - CRM",
+                    "schedule": "Nome da Escala",
+                    "onCall": "Data - Horário - Dia - Turno",
+                    "contract": "CR - Número - Contratante",
+                    "report": "Relatório"
+                }
+            }
+        },
+        "import": {
+            "title": "Relatório de Importação",
+            "subtitle": "AMF - AMERICANA - HOSPITAL FUSAME",
+            "code": "Código",
+            "reference": "Período de Referência",
+            "date": "Data de Vencimento",
+            "button": "Médicos em Espera",
+            "buttonSecond": "Antecipação de Valores",
+            "buttonThird": "Gerar Fechamento",
+            "textField": {
+                "responsible": "Responsável",
+                "company": "Empresa",
+                "reference": "Período de Referência",
+                "code": "Cód. Reduzido de Contrato",
+                "contract": "Contrato",
+                "results": "Centro de Resultados",
+                "document": "Número do Documento",
+                "dueDate": "Data de Vencimento",
+                "value": "Insira o Valor",
+                "note": "Insira a Observação",
+                "search": "Buscar Médico(a)",
+                "grossValue": "Valor Bruto",
+                "netValue": "Valor Líquido",
+                "discounts": "Desconto do Sócio",
+                "valueDiscounts": "Valor de outros Descontos",
+                "proLabor": "Desconto Pró-Labore"
+            },
+            "table": {
+                "proLabore": "Pró-Labore",
+                "code": "Cód. Emp. Pagadora",
+                "payingCompany": "Empresa Pagadora",
+                "cnpj": "CNPJ/CPF",
+                "provider": "Prestador",
+                "payment": "Natureza do pagamento",
+                "grossValue": "Valor Bruto",
+                "discounts": "Outros Descontos, Retenções",
+                "partner": "Taxa de Sócios",
+                "anticipatedValue": "Valor Antecipado",
+                "netValue": "Valor Líquido",
+                "company": "Empresa Recebedora",
+                "bond": "Vínculo",
+                "note": "Observações",
+                "select": "Selecionar",
+                "date": "Data da Solicitação",
+                "status": "Status",
+                "doctorName": "Nome do(a) Médico(a)",
+                "value": "Valor antecipado",
+                "partners": "Sócios",
+                "otherDiscounts": "Outros Descontos",
+                "proLaborDiscounts": "Desconto Pró-Labore"
+            },
+            "modal": {
+                "title": "Antecipação de Valores",
+                "titleSecond": "Médicos em espera",
+                "button": "Gerar Antecipação",
+                "buttonSecond": "Nova Antecipação"
+            },
+            "dropdown": {
+                "title": "Deseja colocar o médico em espera?",
+                "titleSecond": "Deseja reativar esse(s) médico(s) em espera?",
+                "titleTree": "Deseja salvar as alterações da tabela?"
+            },
+            "spinner": {
+                "header": "Realizando o carregamento dos dados",
+                "text": "Aguarde o fim da requisição..."
+            }
+        },
+        "paidHours": {
+            "title": "Relatório de Horas Pagas x Faturadas",
+            "code": "Código",
+            "reference": "Período de Referência",
+            "date": "Data de Vencimento",
+            "button": "Gerar Fechamento",
+            "table": {
+                "description": "Descrição de Serviços Prestados",
+                "estimatedHours": "Horas Previstas",
+                "performetdHours": "Horas Realizadas",
+                "unit": "Unidade",
+                "cost": "Custo Unitário",
+                "totalSheet": "Total Folha",
+                "unitary": "Receita Unitária",
+                "hours": "Horas Faturadas",
+                "totalBilled": "Total Faturado",
+                "comment": "Comentário",
+                "date": "Data Faturada",
+                "total": "Total",
+                "emergency": "Emergência"
+            }
+        }
+    },
+    "notification": {
+        "title": "Notificações",
+        "today": "hoje",
+        "yesterday": "ontem",
+        "subtitle": "Vencimentos",
+        "button": "VERIFICAR",
+        "buttonSecond": "VER TODAS"
+    },
+    "doctorPayments": {
+        "legal": "Recebimento por pessoa física",
+        "another": "Recebimento por outra modalidade",
+        "juridical": "Recebimento por pessoa jurídica"
+    }
+}

@@ -1,0 +1,48 @@
+.image-editor-modal {
+  &.centralized {
+    max-width: 900px;
+    .modal-content {
+      padding: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .row-cropper-container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 200px;
+  }
+  .row-options-container {
+    flex-wrap: nowrap;
+    background-color: black;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #icon {
+      height: 24px;
+      width: 24px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    #icon:hover {
+      cursor: pointer;
+      opacity: 0.3;
+    }
+  }
+
+  .modal-title {
+    font-size: 25px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+}

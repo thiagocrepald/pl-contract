@@ -1,0 +1,22 @@
+.progress__spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--img {
+        animation: spin 1s linear infinite;  
+    }
+
+    &--description {
+        margin-left: 10px;
+    }
+
+    @keyframes spin { 
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+}

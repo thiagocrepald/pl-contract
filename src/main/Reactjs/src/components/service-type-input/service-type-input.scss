@@ -1,0 +1,14 @@
+.menu-item-service {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        width: 30px;
+        align-items: center;
+    }
+}
+

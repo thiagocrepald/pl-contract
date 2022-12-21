@@ -1,0 +1,114 @@
+.management__container {
+    height: 100vh;
+    &--header {
+        height: 64px;
+        border-bottom: solid 1px #D8D8D8;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 26px;
+        span {
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+        .notification-img {
+            content: url(../../assets/img/svg/notificaçao.svg);
+            width: 32px;
+            cursor: pointer;
+        }
+    }
+    &--body {
+        padding: 0 26px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        height: 80px;
+        display: flex;
+        &-menu {
+            float: left;
+        }
+        &-action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            float: right;
+        }
+
+        &-table {
+            padding: 0 26px;
+        }
+    }
+}
+
+.icon-plus {
+    content: url(../../assets/img/svg/mais.svg);
+    margin-right: 14px;
+}
+
+.custom-basic-modal {
+    .modal-body {
+        div.MuiFilledInput-root {
+            height: 50px !important;
+            background: #f6f6f6;
+            border-color: #d8d8d8;
+            border-radius: 6px;
+            overflow: hidden;
+            .MuiSelect-iconFilled {
+              margin-right: 14px;
+            }
+        }
+        .MuiInputLabel-filled {
+            padding-left: 6px;
+            font-size: 15px;
+            color: #979797;
+            position: absolute;
+            top: 6px;
+        }
+        &__fields {
+            
+            & > div:first-child {
+                padding-bottom: 25px !important;
+                p#field1-helper-text.MuiFormHelperText-root.MuiFormHelperText-contained.Mui-error {
+                    position: absolute;
+                    top: 50px;
+                }
+            }
+            div {
+                // padding-bottom: 25px;
+                max-width: 360px;
+                margin: 0 auto;
+                p#field2-helper-text.MuiFormHelperText-root.MuiFormHelperText-contained.Mui-error {
+                    position: absolute;
+                    top: 50px;
+                }
+            }
+           
+            &--small {
+                display: flex;
+                max-width: 360px;
+                margin: 0 auto;
+                & > div {
+                    width: 169px;
+                    // padding-top: 25px;
+                    padding-bottom: 15px;
+                    p#field3-helper-text.MuiFormHelperText-root.MuiFormHelperText-contained.Mui-error {
+                        position: absolute;
+                        top: 50px;
+                    }
+                    p#field4-helper-text.MuiFormHelperText-root.MuiFormHelperText-contained.Mui-error {
+                        position: absolute;
+                        top: 50px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.active-tag {
+    margin: 0 auto;
+}

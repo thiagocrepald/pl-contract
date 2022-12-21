@@ -1,0 +1,27 @@
+.MuiFilledInput-root .MuiSvgIcon-root {
+    margin: 0;
+}
+
+.MuiAutocomplete-listbox {
+    font-size: 13px;
+}
+
+.floating-label-custom-autocomplete {
+    div.MuiFilledInput-root {
+        background: white;
+        border: solid 1px #d8d8d8;
+        border-radius: 6px;
+        font-family: 'Open Sans';
+        font-size: 13px;
+        font-weight: 300;
+        color: #404040;
+        height: 36px;
+        overflow: hidden;
+        .MuiFilledInput-input {
+            padding: 5px 4px 10px;
+        }
+    }
+    label.MuiInputLabel-shrink {
+        transform: translate(9px, 6px) scale(0.75) !important;
+    }
+}

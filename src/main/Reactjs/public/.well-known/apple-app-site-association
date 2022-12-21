@@ -1,0 +1,19 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "253VF8J9M2.com.hygea.plantaomais.development",
+                "paths": [
+                    "*"
+                ]
+            },
+            {
+                "appID": "253VF8J9M2.com.hygea.plantaomais.staging",
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+.menu-item-service {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        width: 75px;
+        align-items: center;
+    }
+}
+
+
+div.modal.show.modal-dialog {
+    max-width: unset;
+    width: 836px;
+}
+div.custom-basic-modal.centralized {
+    max-width: unset;
+    width: 836px;
+}
+div.modal-content {
+    padding: 30px;
+}
+
+div.modal-body {
+    padding-bottom: 30px;
+    width: inherit;
+}
+div.row.hired-input__modal--row-middle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+div.modal-footer {
+    padding-bottom: 0px;
+}

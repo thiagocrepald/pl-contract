@@ -1,0 +1,67 @@
+@import 'src/assets/scss/utils';
+@import 'src/assets/scss/colors';
+
+.radio-selection-wrapper {
+  display: flex;
+  width: 100%;
+
+  &.is-column {
+    flex-direction: column;
+  }
+
+  .radio-selection-error {
+    display: flex;
+    margin: 3px 14px 0;
+
+    span {
+      font-size: 12px;
+      color: $error-two;
+    }
+  }
+
+  .radio-selection-item {
+    display: flex;
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+
+    input {
+      opacity: 0 !important;
+      @include itemSize(1px, 1px);
+    }
+
+    &.is-last-item {
+      margin-bottom: 3px !important;
+    }
+
+    @include imageSize(22px, 22px);
+
+    span {
+      font-size: 15px;
+      word-break: break-word;
+    }
+
+    img {
+      cursor: pointer;
+      user-select: none;
+      margin-right: 5px;
+    }
+
+    .custom-check-box-wrap {
+      display: flex;
+      cursor: pointer;
+      user-select: none;
+      margin-right: 15px;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      border: solid 1.3px #898D8F;
+      @include itemSize(20px, 20px);
+
+      img {
+        margin-right: unset;
+      }
+    }
+  }
+}

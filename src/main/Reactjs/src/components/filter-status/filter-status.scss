@@ -1,0 +1,118 @@
+.checkbox-button__container {
+  img {
+    width: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .checkbox-button {
+    min-width: 100px;
+    height: 27px;
+    border-radius: 4px;
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    align-items: center;
+    margin: 4px 5px;
+    margin-left: 0;
+    cursor: pointer;
+  }
+
+  .check {
+    &--active {
+      background: #DFA944;
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+
+      &.tag__color {
+        &--OK,
+        &--ok {
+          background: #42B69A;
+        }
+
+        &--ACTIVE,
+        &--active {
+          background: #00A0B5;
+        }
+
+        &--PENDING,
+        &--pendency {
+          background: #DF6944;
+        }
+
+        &--ADJUSTED,
+        &--adjusted {
+          background: #91A739;
+        }
+
+        &--ADJUSTED_DOCTOR,
+        &--doctorAdjustment {
+          background: #E7760C;
+        }
+
+        &--ADJUSTED_ADMIN,
+        &--adminAdjustment {
+          background: #E7760C;
+        }
+
+        &--INACTIVE,
+        &--inactive {
+          background: #E1E2E6;
+          color: #979797;
+        }
+
+        &--CORRECTION,
+        &--correction {
+          background: #E7760C;
+        }
+
+        &--ATTENDANCE {
+          background: #7E8251;
+          margin-right: 8px;
+        }
+
+        &--CONTESTED,
+        &--contested {
+          background: #E7760C;
+        }
+
+        &--PROGRAMMED {
+          background: #ED9E55;
+        }
+
+        &--NOT_REGISTERED,
+        &--notRegistered {
+          background: #954A61;
+        }
+
+        &--REJECTED,
+        &--rejected {
+          background: #D83434;
+        }
+
+        &--CANCELED,
+        &--canceled {
+          background: #B4B4B4;
+        }
+      }
+    }
+
+    .tag__color--ATTENDANCE {
+      margin-right: 8px;
+    }
+
+    &--disable {
+      background: white;
+      font-size: 12px;
+      font-weight: 700;
+      color: #404040;
+      border: 1px solid #D8D8D8;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+      &.tag__color--ATTENDANCE {
+        margin-right: 8px;
+      }
+    }
+  }
+}

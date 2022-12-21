@@ -1,0 +1,99 @@
+.filter-body__container {
+    padding: 18px 14px 14px 14px;
+    height: 100%;
+    font-family: "Open Sans";
+    font-size: 13px;
+  
+    .MuiCheckbox-colorSecondary.Mui-checked {
+        color: #3d50aa;
+    }
+    .filter-body--title {
+        font-size: 12px;
+        color: #404040;
+        font-weight: 600;
+        font-family: "Open Sans";
+        margin-bottom: 10px;
+    }
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        div {
+            color: #979797;
+            cursor: pointer;
+        }
+        div:first-child {
+            color: #e40b21;
+            font-weight: 500;
+        }
+        div:last-child {
+            color: #149372;
+            font-weight: 600;
+        }
+    }
+    &-line {
+        display: flex;
+        color: #404040;
+        justify-content: space-between;
+        height: 36px;
+        &-group {
+            display: flex;
+            align-items: center;
+            min-width: 120px;
+            max-width: 120px;
+            line-height: 13px;
+
+            padding-left: 5px;
+
+            &:hover {
+                background: #f8f8f8;
+            }
+        }
+    }
+    &-line--second {
+        display: flex;
+        color: #404040;
+        justify-content: flex-start;
+        height: 36px;
+        >div:last-child {
+            margin-left: 10px;
+        }
+        .group--inactive {
+            display: flex;
+            align-items: center;
+            max-width: 120px;
+            line-height: 13px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            width: 86px;
+            height: 34px;
+            padding: 4px 4px 4px 8px;
+            background: #e1e2e6;
+            color: #7b7b7b;
+            font-weight: 400;
+            .MuiIconButton-label {
+                content: url(../../assets/img/svg/gray-checkbox.svg) !important;
+                display: flex;
+            }
+        }
+        .group--active {
+            display: flex;
+            align-items: center;
+            max-width: 120px;
+            line-height: 13px;
+            border: 1px solid #d8d8d8;
+            border-radius: 4px;
+            width: 86px;
+            height: 34px;
+            padding: 4px 4px 4px 8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            .MuiIconButton-label {
+                content: url(../../assets/img/svg/empty-checkbox.svg) !important;
+                display: flex;
+            }
+        }
+    }
+    hr {
+        margin: 10 0 6 0;
+    }
+}

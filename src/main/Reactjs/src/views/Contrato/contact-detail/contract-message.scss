@@ -1,0 +1,288 @@
+.contract-message__container {
+  min-height: calc(100vh - 115px);
+  position: relative;
+
+  &--title {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    line-height: 36px;
+  }
+  &--subtitle {
+    color: #1d1e1f;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    margin-top: 4px;
+  }
+  
+  &--body-table {
+    max-height: calc(100vh - 395px);
+    overflow: auto;
+    outline: 1px solid #e1e2e6;
+
+    &-row {
+      display: flex;
+      border: solid 1px #e1e2e6;
+      border-bottom: solid 1px transparent;
+      padding: 16px 16px 16px 23px;
+      min-height: 90px;
+      overflow: hidden;
+
+      &:hover {
+        border-color: #28F0B7 !important;
+      }
+
+      .row-name {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #3e3e3e;
+        min-height: 57px;
+        justify-content: center;
+
+        span {
+          font-size: 13px;
+          color: black;
+          font-weight: 600;
+        }
+      }
+      .row-text {
+        flex: 0 0 70%;
+        font-size: 13px;
+        color: #3e3e3e;
+        display: flex;
+        flex-direction: column;
+
+        .row-button {
+          margin-top: 8px;
+          padding-left: calc(100%/2 - 34px);
+        
+        }
+        .row-button-second {
+          padding-left: calc(100%/2 - 28px);
+          position: relative;
+          
+          .button__container-outlined {
+            position: absolute;
+            bottom: -1px;
+            z-index: 1;
+            background: white;
+          }
+
+          &:after {
+            content: " ";
+            height: 60px;
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, white);
+          }
+        }
+      }
+
+      .row-dots {
+        flex: 0 0 5%;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+          cursor: pointer;
+          height: 16px;
+        }
+      }
+    }
+
+    &-row:last-child {
+      border-bottom: solid 1px #e1e2e6;
+    }
+
+    &-row:nth-child(even) {
+      background: white;
+    }
+    &-row:nth-child(odd) {
+      background: #f9fafb;
+      .row-button-second {
+        &:after {
+          background: linear-gradient(to bottom, transparent, #f9fafb);
+        }
+        .button__container-outlined {
+          background: #f9fafb;
+        }
+      }
+    }
+  }
+
+  &--body-chat {
+    background: #f8f8f8;
+    height: 120px;
+    padding: 16px 40px 36px 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 11px;
+    left: -25px;
+    width: calc(100% + 50px);
+
+    .text-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .text-input {
+      display: flex;
+      flex: 0 0 100%;
+      position: relative;
+    }
+
+    .send-button {
+      display: flex;
+      flex: 0 0 5%;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .text-counter {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3e3e3e;
+      margin-top: 4px;
+    }
+  }
+}
+
+.contract-message__modal {
+  background: white;
+  width: 876px;
+  height: 532px;
+  margin: auto;
+  position: relative;
+  left: 0;
+  padding: 32px 12px;
+  border-radius: 6px;
+
+  &--title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &--body-wrapper {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .close-img {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .contract-message__container--body-table {
+    max-height: 360px;
+  }
+
+  .contract-message__container--body-table-row {
+    height: unset;
+
+    .row-name {
+      height: revert;
+    }
+
+    .row-dots {
+      height: unset;
+    }
+  }
+}
+
+.contract-message__edit-modal {
+  background: white;
+  max-width: 876px;
+  margin: auto;
+  position: relative;
+  left: 0;
+  padding: 32px 12px;
+  border-radius: 6px;
+
+  &--title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #3e3e3e;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &--body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 876px;
+
+    .text-counter {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3e3e3e;
+      width: 876px;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      padding-right: 105px;
+    }
+  }
+
+  &--text-input {
+    font-size: 13px;
+    color: #3e3e3e;
+    display: flex;
+    flex: 0 0 78%;
+    width: 688px;
+    margin: 0px 83px;
+  }
+
+  &--buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    .icon-arrow-filled {
+      content: url(../../../assets/img/svg/arrow-left-filled.svg);
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+  }
+
+  .close-img {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+div.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 2;
+}

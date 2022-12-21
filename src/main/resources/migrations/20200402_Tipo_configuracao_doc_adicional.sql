@@ -1,0 +1,1 @@
+INSERT INTO `TIPO_CONFIGURACAO` (`ID`, `DESCRICAO`) VALUES (4, 'Receber Notificações - Documentos adicionais');

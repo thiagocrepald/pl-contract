@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+
+      <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+      <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+      <property name="show_sql">false</property>
+      <property name="format_sql">false</property>
+      <property name="hibernate.hbm2ddl.auto">none</property>
+      <property name="current_session_context_class">thread</property>
+      <property name="javax.persistence.validation.mode">none</property>
+      <property name="hibernate.connection.pool_size">0</property>
+
+      <!-- VIEW -->
+      <mapping class="br.com.plantaomais.entitybean.view.VwIndicadoresEspecialidades"/>
+
+      <!-- ENTIDADES -->
+      <mapping class="br.com.plantaomais.entitybean.Usuario" />
+      <mapping class="br.com.plantaomais.entitybean.TipoPermissao" />
+      <mapping class="br.com.plantaomais.entitybean.UsuarioTipoPermissao" />
+      <mapping class="br.com.plantaomais.entitybean.Contratante" />
+      <mapping class="br.com.plantaomais.entitybean.TipoServico" />
+      <mapping class="br.com.plantaomais.entitybean.Contract" />
+      <mapping class="br.com.plantaomais.entitybean.Workplace" />
+      <mapping class="br.com.plantaomais.entitybean.WorkplaceItem" />
+      <mapping class="br.com.plantaomais.entitybean.Escala" />
+      <mapping class="br.com.plantaomais.entitybean.Especialidade" />
+      <mapping class="br.com.plantaomais.entitybean.Plantao" />
+      <mapping class="br.com.plantaomais.entitybean.PlantaoEspecialidade" />
+      <mapping class="br.com.plantaomais.entitybean.PlantaoSetor" />
+      <mapping class="br.com.plantaomais.entitybean.Attachment"  />
+      <mapping class="br.com.plantaomais.entitybean.Setor" />
+      <mapping class="br.com.plantaomais.entitybean.Medico" />
+      <mapping class="br.com.plantaomais.entitybean.Installation" />
+      <mapping class="br.com.plantaomais.entitybean.MedicoEspecialidade" />
+      <mapping class="br.com.plantaomais.entitybean.Configuracao" />
+      <mapping class="br.com.plantaomais.entitybean.TipoConfiguracao" />
+      <mapping class="br.com.plantaomais.entitybean.CampoAnexo" />
+      <mapping class="br.com.plantaomais.entitybean.MedicoAnexo" />
+      <mapping class="br.com.plantaomais.entitybean.CandidatoPlantao" />
+      <mapping class="br.com.plantaomais.entitybean.BloqueioMedicoEscala" />
+      <mapping class="br.com.plantaomais.entitybean.ContratoAnexo" />
+      <mapping class="br.com.plantaomais.entitybean.MedicoContratoAnexo" />
+      <mapping class="br.com.plantaomais.entitybean.Curso" />
+      <mapping class="br.com.plantaomais.entitybean.MedicoCurso" />
+      <mapping class="br.com.plantaomais.entitybean.Country" />
+      <mapping class="br.com.plantaomais.entitybean.State" />
+      <mapping class="br.com.plantaomais.entitybean.City" />
+      <mapping class="br.com.plantaomais.entitybean.Address" />
+      <mapping class="br.com.plantaomais.entitybean.BloqueioMedicoContrato" />
+      <mapping class="br.com.plantaomais.entitybean.PreferencesWeekday" />
+      <mapping class="br.com.plantaomais.entitybean.PreferencesSetor" />
+      <mapping class="br.com.plantaomais.entitybean.PreferencesPeriodo" />
+      <mapping class="br.com.plantaomais.entitybean.PreferencesLocality" />
+      <mapping class="br.com.plantaomais.entitybean.PreferencesMedic" />
+      <mapping class="br.com.plantaomais.entitybean.Event" />
+      <mapping class="br.com.plantaomais.entitybean.Notification" />
+      <mapping class="br.com.plantaomais.entitybean.PaymentData" />
+      <mapping class="br.com.plantaomais.entitybean.CameToUs" />
+      <mapping class="br.com.plantaomais.entitybean.MobileVersion" />
+      <mapping class="br.com.plantaomais.entitybean.ContractingParty" />
+      <mapping class="br.com.plantaomais.entitybean.Pix" />
+
+      <!-- ENTIDADES APP -->
+      <mapping class="br.com.plantaomais.entitybean.aplicativo.TrocaVaga"/>
+
+   </session-factory>
+
+
+</hibernate-configuration>

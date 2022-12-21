@@ -1,0 +1,6 @@
+{
+    "editor.wordWrapColumn": 150,
+    "prettier.printWidth": 150,
+    "html.format.wrapLineLength": 150,
+    "javascript.validate.enable": false
+}

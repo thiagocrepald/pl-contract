@@ -1,0 +1,68 @@
+.custom-basic-modal {
+    &.centralized {
+        max-width: 600px;
+        .modal-content {
+            padding: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .modal-title {
+        font-size: 22px;
+        font-family: "Open Sans";
+        color: #3e3e3e;
+        font-weight: 700;
+        width: 100%;
+        word-wrap: break-word;
+    }
+    .icon-close {
+        content: url(../../assets/img/svg/fechar-modal.svg);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .icon-arrow-filled {
+        content: url(../../assets/img/svg/arrow-left-filled.svg);
+        margin-right: 8px;
+        margin-bottom: 1px;
+    }
+    .basic-modal--button-back {
+        margin-right: 11px;
+        button {
+            width: 150px;
+            height: 44px;
+            font-size: 15px;
+            font-family: 'Open Sans';
+            color: #979797;
+            font-weight: 400;
+            border-color: #D8D8D8;
+            border-radius: 6px;
+            background: white;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            .btn-primary:not(:disabled):not(.disabled):active {
+                background: white;
+            }
+        }
+    }
+    .basic-modal--button-forward {
+        margin-left: 11px;
+        button {
+            width: 150px;
+            height: 44px;
+            font-size: 15px;
+            font-family: 'Open Sans';
+            color: white;
+            font-weight: 400;
+            border-color: #D8D8D8;
+            border-radius: 6px;
+            background: #149372;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:not(:disabled):not(.disabled):active {
+            background: #149372;
+            border-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.contract-logs__container {
+  padding-bottom: 28px;
+
+  &--title {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &--subtitle {
+    font-size: 13px;
+    color: #1d1e1f;
+    font-weight: 600;
+    margin: 28px 0 10px 0;
+  }
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  div.MuiFilledInput-root {
+    height: 34px;
+  }
+
+  &--body-table {
+    border: 1px solid #e1e2e6;
+    &-row {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid 1px #e1e2e6;
+      padding: 16px 16px 16px 23px;
+
+      .row-name {
+        font-size: 12px;
+        color: #3e3e3e;
+        margin-bottom: 2px;
+      }
+      .row-text {
+        font-size: 13px;
+        color: #3e3e3e;
+      }
+    }
+
+    &-row:last-child {
+      border-bottom: none;
+    }
+
+    &-row:nth-child(even) {
+      background: white;
+    }
+    &-row:nth-child(odd) {
+      background: #f9fafb;
+    }
+  }
+}

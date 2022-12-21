@@ -1,0 +1,132 @@
+@import "react-big-calendar/lib/sass/styles";
+
+.back-button {
+  width: 22px;
+  height: 22px;
+  background: #149372;
+  border-radius: 50%;
+  display: flex;
+  padding-left: 7px;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: #027658;
+    transition: 250ms;
+  }
+  &:active {
+    background: #005740;
+    transition: 250ms;
+  }
+  .arrow-white {
+    content: url(../assets/img/svg/arrow-left-white.svg);
+    width: 6px;
+  }
+}
+
+.contract-register--button {
+  font-size: 12px;
+  color: #149372;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 12px;
+
+  .icon-mais:before {
+    font-size: 28px;
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: #027658;
+    transition: 250ms;
+
+    span {
+      text-decoration: underline;
+    }
+    .icon-mais:before {
+      color: #027658;
+    }
+  }
+  &:active {
+    color: #005740;
+    transition: 250ms;
+    span {
+      text-decoration: underline;
+    }
+    .icon-mais:before {
+      color: #005740;
+    }
+  }
+}
+
+.icon-dowload2:before {
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.MuiFormControl-root {
+  margin: 0 !important;
+  width: 100%;
+  .MuiInputLabel-filled,
+  .MuiInputLabel-shrink {
+    font-size: 13px;
+    font-family: "Open Sans";
+    color: #404040;
+    font-weight: 300;
+  }
+
+  // .MuiInputLabel-filled {
+  //   transform: translate(12px, 12px) scale(1);
+  // }
+}
+
+.MuiSelect-root.MuiSelect-select.MuiSelect-filled.MuiInputBase-input.MuiFilledInput-input {
+  padding: 18px;
+  border: none;
+}
+
+.full-screen-modal {
+  background: white;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.MuiSwitch-track {
+  background: #28f0b7;
+  border: 1px solid #21dea8;
+}
+
+div.MuiFilledInput-root {
+  height: 50px;
+  background: #f6f6f6;
+  .MuiFormLabel-root.MuiFocused {
+    background: white;
+  }
+}
+
+.contract-detail__container--body-group {
+  div.MuiFilledInput-root {
+    height: 34px;
+  }
+}
+
+.padding-page {
+  padding: 0 26px 40px 26px;
+}
+
+
+.Toastify__toast {
+  border: none;
+  box-shadow: none!important;
+
+  &--error {
+    background: transparent;
+  }
+}
+
+.MuiPickersDatePickerRoot-toolbar{
+  display: none!important;
+}

@@ -1,0 +1,205 @@
+@import 'src/media-query';
+
+.sort-default-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+
+.sort-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+
+.table thead th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-transform: none;
+    text-align: center;
+}
+
+.MuiTableHead-root {
+    .MuiTableCell-head {
+        border: unset;
+        font-weight: 400;
+        font-family: "Open Sans";
+        color: black;
+    }
+}
+
+.table td {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #3e3e3e;
+    text-align: center;
+
+    div.base-selectfield__payer, div.base-selectfield__link {
+        .MuiFormControl-root {
+            align-items: center;
+        }
+    }
+}
+
+tr:nth-child(odd) {
+    background: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.MuiTableRow-root.header-container.MuiTableRow-head {
+    background: #f9fafb;
+    border-bottom: 1px solid #e1e2e6;
+}
+
+.MuiTableCell-head:first-child,
+.MuiTableCell-body:first-child,
+.MuiTableCell-head:last-child,
+.MuiTableCell-body:last-child {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    margin: 0;
+    td,
+    th {
+        border: unset;
+    }
+}
+
+.pagination-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 24px;
+    justify-content: flex-end;
+    
+    .MuiPagination-root {
+        .MuiPagination-ul {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            li:first-child {
+                order: 2;
+                margin-left: 24px;
+                margin-right: -7px;
+                .MuiPaginationItem-outlined {
+                    border: solid 1px #149372;
+                    background: white;
+                }
+                .MuiPaginationItem-rounded {
+                    border-radius: 4px 0 0 4px;
+                }
+            }
+            li:nth-child(2) {
+                order: 1;
+                .MuiPaginationItem-outlined {
+                    border: solid 1px #bcbcbc;
+                    background: white;
+                }
+                .MuiPaginationItem-root {
+                    height: 29px;
+                }
+                .input-style {
+                    font-family: 'Open Sans';
+                    font-weight: 300;
+                    width: 46px;
+                    height: 26px;
+                    border-radius: 6px;
+                    border: solid 1px #bcbcbc;
+                    background-color: #ffffff;
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-size: 0.875rem;
+                    color: #333333;
+                }
+                .text-style {
+                    font-size: 0.875rem;
+                    color: #333333;
+                }
+            }
+            li:last-child {
+                order: 3;
+                .MuiPaginationItem-outlined {
+                    border: solid 1px #149372;
+                    background: white;
+                }
+                .MuiPaginationItem-rounded {
+                    border-radius: 0 4px 4px 0;
+                }
+            }
+            li {
+                .MuiSvgIcon-root {
+                    fill: #149372;
+                    stroke-width: -10px;
+                    stroke: white;
+                }
+                .MuiPaginationItem-root {
+                    min-width: 29px;
+                    height: 29px;
+                }
+            }
+        }
+    }
+}
+
+.icon-dots {
+    content: url(../../assets/img/svg/three-dots.svg);
+    cursor: pointer;
+}
+
+.active-tag {
+    background: #00a0b5;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    color: white;
+    text-transform: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 0;
+    width: 56px;
+}
+
+.inactive-tag {
+    background: #e1e2e6;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    color: #979797;
+    text-transform: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 0;
+    width: 56px;
+}
+
+.MuiPaper-root {
+    // width: 150px;
+    .MuiMenuItem-root {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        height: 36px;
+        color: #404040;
+    }
+}
+
+.table-container-sot {
+    @include responsiveHeight(ss) {
+        max-height: 200px;
+    }
+    @include responsiveHeight(s) {
+        max-height: 400px;
+    }
+    @include responsiveHeight(m) {
+        max-height: 550px;
+    }
+    @include responsiveHeight(l) {
+        max-height: 800px;
+    }
+}

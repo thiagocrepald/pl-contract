@@ -1,0 +1,139 @@
+.select-infinity__container {
+	&--gap {
+		width: 370px;
+		height: 5px;
+		position: absolute;
+		top: 34px;
+		background-color: #FFFFFF;
+		z-index: 11;
+		border-right: 1px solid #D8D8D8;
+		border-left: 1px solid #D8D8D8;
+	}
+  
+	&--buttons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 8px;
+  
+		span {
+			font-size: 16px;
+			font-weight: 700;
+			color: black;
+		}
+  
+		&-dropdown {
+			margin-left: 24px;
+			position: relative;
+
+			.button__container-outlined {
+				&-text {
+					justify-content: space-between;
+					padding: 0 7px;
+				}
+				&--gray {
+					& * {
+						color: #505050;
+					}
+					&:hover {
+						color: #505050;
+					}
+					&:active {
+						// color: #505050;
+						color: red;
+					}
+				}
+			}
+		}
+	}
+  
+	.filter-body__container {
+		position: relative;
+
+		&-buttons, hr {
+			display: none;
+		}
+
+		.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+			height: 50px !important;
+		}
+		.MuiChip-root.MuiAutocomplete-tag.MuiChip-deletable, .MuiAutocomplete-clearIndicator {
+			display: none;
+		}
+		.MuiAutocomplete-popperDisablePortal {
+			position: relative;
+		}
+		.MuiPaper-root.MuiAutocomplete-paper.MuiPaper-elevation1.MuiPaper-rounded {
+			border: none;
+			box-shadow: none;
+		}
+		.MuiAutocomplete-option {
+			padding: 0px;
+			height: 33px;
+		}
+		.MuiAutocomplete-listbox {
+			height: 213px !important;
+		}
+	}
+  
+	div.paper-filter {
+		// left: calc(100% - 949px) !important;
+		left: 170px !important;
+		top: 48px !important;
+		width: 370px;
+		
+		div.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+			border: 1px solid #D8D8D8;
+			transition: none !important;
+		}
+
+		div.checkbox-button__container {
+			// height: 271px;
+			// max-height: 40vh;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			&--buttons {
+				span.MuiIconButton-label {
+					display: none;
+				}
+				&-selected {
+					width: 100%;
+					height: 100%;
+					line-height: 33px;
+					background-color: #F7F7F7;
+				}
+				&-unselected {
+					width: 100%;
+				}
+			}
+		}
+	}
+    
+	.floating-label-custom-autocomplete {
+		div.MuiFilledInput-root {
+			background: white;
+			border: solid 1px #d8d8d8;
+			border-radius: 6px;
+			font-family: 'Open Sans';
+			font-size: 13px;
+			font-weight: 300;
+			color: #404040;
+			height: 36px;
+			overflow: hidden;
+			.MuiFilledInput-input {
+				padding: 0px 4px 10px !important;
+			}
+		}
+		label.MuiInputLabel-shrink {
+			transform: translate(9px, 11px) scale(0.75) !important;
+		}
+	}
+    
+	.report__container--header {
+		div.MuiFilledInput-root {
+			height: 42px !important;
+		}
+	}
+}
+

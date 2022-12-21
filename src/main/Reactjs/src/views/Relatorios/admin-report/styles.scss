@@ -1,0 +1,249 @@
+.report__container {
+  &--subtitle {
+    font-size: 13px;
+    color: #1d1e1f;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  &--header {
+    padding: 12px 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    div.MuiFilledInput-root {
+      height: 42px;
+    }
+
+    &-second {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 22px;
+      margin-left: 26px;
+    }
+
+    &-rule {
+      border-top: solid 1px #d8d8d8;
+      width: 100%;
+    }
+  }
+
+  &--table {
+    th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-stickyHeader {
+      position: unset;
+    }
+
+    .MuiTable-stickyHeader {
+      border-collapse: collapse;
+    }
+    
+    .MuiTableCell-head:first-child, .MuiTableCell-body:first-child, .MuiTableCell-head:last-child, .MuiTableCell-body:last-child {
+      display: table-cell;
+    }
+  }
+
+  &--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+    }
+
+    &-dropdown {
+      margin-right: 8px;
+      position: relative;
+
+      .button__container-outlined {
+        &-text {
+          justify-content: space-between;
+          padding: 0 7px;
+        }
+        &--gray {
+          & * {
+            color: #505050;
+          }
+          &:hover {
+            color: #505050;
+          }
+          &:active {
+            // color: #505050;
+            color: red;
+          }
+        }
+      }
+    }
+
+  }
+
+  &--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: -5px;
+  }
+
+  .notification-img {
+    width: 20px;
+    cursor: pointer;
+  }
+  .download-img {
+    width: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .MuiTableCell-root.MuiTableCell-body.td-first {
+    padding: 0px;
+    line-height: 44px;
+  }
+}
+
+.report__modal {
+  background: white;
+  max-width: 576px;
+  width: 576px;
+  margin: auto;
+  position: relative;
+  left: 0;
+  padding: 32px 35px;
+  border-radius: 6px;
+
+  &--message {
+    height: 6px;
+    padding-top: 4px;
+    width: 100%;
+    color: #F44336; 
+    font-size: 12px;
+    text-align: center;
+  }
+
+  div.MuiFilledInput-root {
+    height: 50px !important;
+    background: #f6f6f6;
+    border-color: #d8d8d8;
+    border-radius: 6px;
+    overflow: hidden;
+    .MuiSelect-iconFilled {
+      margin-right: 14px;
+    }
+  }
+}
+
+.report__modal-second {
+  background: white;
+  max-width: 876px;
+  width: 876px;
+  margin: auto;
+  position: relative;
+  left: 0;
+  padding: 32px 25px;
+  border-radius: 6px;
+
+  .MuiTableCell-stickyHeader {
+    position: unset;
+  }
+}
+
+.report__modal,
+.report__modal-second {
+  .close-img {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+// .filter-report-group__container {
+//   div.paper-filter {
+//     left: calc(100% - 438px) !important;
+//     top: 40px !important;
+//   }
+//   div.checkbox-button__container {
+//     &--buttons {
+//       display: flex;
+//       flex-wrap: wrap;
+//       align-items: center; 
+//       justify-content: center;
+//       max-width: 260px;
+//       max-height: 50vh;
+//       overflow-y: auto;
+//       margin-bottom: 11px;
+//     }
+//   }
+// }
+
+// .filter-report-column__container {
+//   div.paper-filter {
+//     left: calc(100% - 350px) !important;
+//     top: 40px !important;
+//     width: 350px;
+//   }
+//   div.checkbox-button__container {
+//     &--buttons {
+//       display: flex;
+//       flex-wrap: wrap;
+//       align-items: center; 
+//       justify-content: flex-start;
+//       max-width: 800px;
+//       max-height: 50vh;
+//       overflow-y: auto;
+//       margin-bottom: 11px;
+//       margin-left: 10px;
+//     }
+//   }
+// }
+
+.filter-report-data__container {
+  &--doctor, &--on-call, &--schedule, &--contract {
+    &-gap {
+      width: 98px;
+      height: 5px;
+      position: absolute;
+      top: 34px;
+      background-color: #FFFFFF;
+      z-index: 11;
+      left: 1px;
+    }
+
+    div.paper-filter {
+      left: calc(100% - 724px) !important;
+      top: 36px !important;
+      width: 424px;
+      
+      div.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+        border: 1px solid #D8D8D8;
+        transition: none !important;
+      }
+
+      div.checkbox-button__container {
+        max-height: 40vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+  }
+}

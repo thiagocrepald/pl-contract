@@ -1,0 +1,139 @@
+@import "../../components/responsive/media_query.scss";
+
+#indicadores {
+  .indicadores__web {
+    @include responsive(s) {
+      display: none;
+    }
+  }
+
+  .indicadores__mobile {
+    display: none;
+    @include responsive(s) {
+      padding-top: 20px;
+      display: block;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    .menu-item-mobile {
+      margin: 40px;
+      font-size: large;
+      display:flex;
+      justify-content: center;
+    }
+  }
+
+  .mapa-brasil {
+    width: 250px !important;
+  }
+
+  .container {
+    margin-top: 50px;
+
+  }
+
+
+  .m-t-30 {
+    margin-top: 30px;
+  }
+
+  .m-t-60 {
+    margin-top: 60px;
+  }
+
+  .m-t-24 {
+    margin-top: 24px;
+  }
+
+  .m-b-5 {
+    margin-bottom: 5px;
+  }
+
+  .p-l-4 {
+    padding-left: 4%;
+  }
+
+  .p-l-3 {
+    padding-left: 3%;
+  }
+
+  .m-l-4 {
+    margin-left: 4%;
+  }
+
+  .quadrado {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+
+  .row-card {
+    margin-right: 0;
+  }
+
+  .card {
+    max-height: 350px;
+  }
+
+  .divCard {
+    margin: 1rem;
+  }
+
+  .divCardEstado {
+    margin: 2.5rem;
+  }
+
+  .btnFiltrar {
+    height: 2rem;
+    background-color: white;
+    margin-top: 0.2rem !important;
+  }
+
+  .filtrarIcon {
+    height: 2rem !important;
+    color: #009471 !important;
+    background-color: white !important;
+    margin-top: 0.3rem !important;
+  }
+
+  .table td, .table th {
+
+    white-space: pre-line;
+
+  }
+
+
+  .td-carga-horaria{
+    white-space: nowrap !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+}
+
+.date-custom {
+  display: block;
+  width: 100%;
+  height: calc(2.75rem + 2px);
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cad1d7;
+  border-radius: 0.375rem;
+  box-shadow: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 30000;
+
+}
+.footer {
+  background: #e7e7e7;
+  padding: 2.5rem 0;
+}
+
+

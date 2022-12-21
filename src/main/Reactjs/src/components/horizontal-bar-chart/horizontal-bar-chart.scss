@@ -1,0 +1,23 @@
+
+.horizontal-bar-chart {
+    font-family: 'Open Sans';
+
+    .c3-chart-arcs {
+        text {
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    .c3-ygrid,
+    .c3-axis-x .domain {
+        stroke: #e1e2e6;
+    }
+
+    .tick {
+        font-family: Frutiger;
+        font-size: 11px;
+        color: #072056;
+    }
+}

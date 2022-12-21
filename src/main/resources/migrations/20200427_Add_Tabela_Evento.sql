@@ -1,0 +1,27 @@
+CREATE TABLE `EVENTO` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`ATTACHMENT_ID` int(11) DEFAULT NULL,
+`TITULO` varchar(100) NOT NULL,
+`DESCRICAO` text DEFAULT NULL,
+`ENDERECO_ID` bigint(20) NOT NULL,
+`DATA_HORA_INICIO` datetime NOT NULL,
+`DATA_HORA_FIM` datetime NOT NULL,
+`LINK` varchar(255) DEFAULT NULL,
+`ATIVO` bit(1) NOT NULL,
+`DATA_USUARIO_ALT` datetime NOT NULL,
+`DATA_USUARIO_DEL` datetime DEFAULT NULL,
+`DATA_USUARIO_INC` datetime NOT NULL,
+`USUARIO_INC` longtext NOT NULL,
+`USUARIO_DEL` longtext,
+`USUARIO_ALT` longtext NOT NULL,
+`EXCLUIDO` bit(1) NOT NULL,
+PRIMARY KEY (`ID`)
+);
+
+alter table EVENTO
+add constraint FK_EVENTO_ENDERECO_ID
+        foreign key (ENDERECO_ID) references ADDRESS (ID);
+
+alter table EVENTO
+add constraint FK_EVENTO_ATTACHMENT_ID
+        foreign key (ATTACHMENT_ID) references ATTACHMENT (ID);

@@ -1,0 +1,128 @@
+@import "../../components/responsive/media_query.scss";
+
+#escala-lista {
+  @include responsive(s) {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+}
+
+  .botton-to-right {
+    display: block;
+    text-align: right;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    @include responsive(s) {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .botton-to-right__mobile {
+    @include responsive(s) {
+      display: flex;
+    }
+  }
+
+  .quadrado {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .vermelho {
+    background-color: red;
+  }
+
+  .amarelo {
+    background-color: yellow;
+  }
+
+  .row-legenda {
+    margin: 0 !important;
+  }
+
+  .b-r-1 {
+    border-radius: 1.375rem !important;
+  }
+  .p-t-50 {
+    padding-top: 50px;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+
+  .table__web {
+    @include responsive(s) {
+      display: none;
+    }
+  }
+
+  .table__mobile {
+    display: none;
+    @include responsive(s) {
+      display: block;
+      table-layout: fixed;
+      width: 100%;
+
+      .table__mobile--header {
+        width: 154px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-right: 1px solid #e9ecef;
+        font-weight: 600;
+        background-color: #f6f9fc;
+        color: #8898aa;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .card .table td,
+  .card .table th {
+    @include responsive(s) {
+      padding: 15px;
+      white-space: normal;
+    }
+  }
+
+  .button-style {
+    display: flex;
+    @include responsive(s) {
+      display: flex;
+      justify-content: space-between;
+
+      &--first {
+        width: 40%;
+      }
+
+      &--second {
+        width: 60%;
+      }
+    }
+  }
+
+  .rdt {
+    @include responsive(s) {
+      margin-bottom: 10px;
+    }
+  }
+
+  #diaSelect {
+    @include responsive(s) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .p-b-20 {
+    @include responsive(s) {
+      padding-bottom: 40px;
+    }
+  }
+}

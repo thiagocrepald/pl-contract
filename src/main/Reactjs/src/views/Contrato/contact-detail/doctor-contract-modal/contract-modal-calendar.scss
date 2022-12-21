@@ -1,0 +1,165 @@
+.calendar-modal__container {
+  font-family: 'Open Sans', serif;
+
+  &--items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+  }
+
+  &--title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #3e3e3e;
+  }
+  &--today-button {
+    border: 1px solid #e1e2e6;
+    background: #f9fafb;
+    font-size: 11px;
+    font-weight: 600;
+    color: #7b7b7b;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 52px;
+    height: 27px;
+    margin-right: 10px;
+
+    &:hover {
+      background: #e1e2e6;
+    }
+  }
+  &--back-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background: #149372;
+    cursor: pointer;
+    .seta-esquerda--img {
+      content: url(../../../../assets/img/svg/seta-esq.svg);
+      margin: auto;
+    }
+  }
+  &--next-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #149372;
+    cursor: pointer;
+    .seta-esquerda--img {
+      content: url(../../../../assets/img/svg/seta-esq.svg);
+      transform: rotate(180deg);
+      margin: auto;
+    }
+  }
+
+  &--date {
+    width: 192px;
+    height: 30px;
+    border-top: 1px solid #e1e2e6;
+    border-bottom: 1px solid #e1e2e6;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+  }
+
+  .rbc-toolbar {
+    display: none;
+  }
+
+  .rbc-month-view {
+    border-radius: 6px;
+    border-color: #e1e2e6;
+
+    .rbc-month-header {
+      height: 40px;
+      background: #f9fafb;
+    }
+
+    .rbc-header + .rbc-header {
+      border-left: none;
+    }
+
+    .rbc-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 14px;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+
+  .rbc-date-cell{
+    text-align: left;
+    padding: 10px 0 0 10px;
+    color: #7B7B7B;
+    font-size: 14px;
+    font-weight: 600;
+
+    a {
+      pointer-events: none;
+    }
+  }
+
+  .rbc-off-range-bg {
+    background: #F9FAFB;
+  }
+
+  .rbc-today {
+    background: white;
+  }
+  
+  .rbc-event, .rbc-day-slot .rbc-background-event {
+    background: white;
+    padding: 10px 0 0 5px;
+  }
+
+  .calendar-modal--dayline {
+    display: flex;
+    font-size: 12px;
+    color: #3E3E3E;
+    align-items: center;
+    line-height: 13px;
+
+    div {
+     font-size: 20px;
+    }
+  }
+
+
+
+  .rbc-now.rbc-current {
+    a {
+      pointer-events: none;
+      background: #28F0B7;
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      line-height: 26px;
+      border-radius: 50%;
+      text-align: center;
+      color: black;
+    }
+  }
+
+  &--caption{
+    display: flex;
+    margin-top: 25px;
+
+    .calendar-modal--dayline {
+      margin-right: 16px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <path id="ymnaayfiha" d="M4.167 7.548l-3.08-3.08c-.217-.217-.568-.217-.785 0-.217.217-.217.569 0 .786l3.472 3.472c.217.217.569.217.786 0l7.638-7.639c.217-.217.217-.568 0-.785-.217-.217-.568-.217-.785 0L4.167 7.548z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-790 -324) translate(750 312) translate(8 12) translate(32)">
+                        <rect width="18.333" height="18.333" x=".833" y=".833" fill="#00A0B5" rx="4"/>
+                        <g>
+                            <g transform="translate(3.667 4.667) translate(.083 .472)">
+                                <mask id="9743rlp77b" fill="#fff">
+                                    <use xlink:href="#ymnaayfiha"/>
+                                </mask>
+                                <g fill="#FFF" mask="url(#9743rlp77b)">
+                                    <path d="M0 0H16.667V16.667H0z" transform="translate(-2.083 -3.472)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

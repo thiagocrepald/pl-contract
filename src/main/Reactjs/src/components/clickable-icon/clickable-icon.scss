@@ -1,0 +1,10 @@
+.clickable-icon {
+    margin-left: 5px;
+    fill: black;
+    &:hover {
+        cursor: pointer;
+    }
+    &.is-disabled {
+        opacity: unset;
+    }
+}

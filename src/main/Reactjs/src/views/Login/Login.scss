@@ -1,0 +1,41 @@
+@import "../../components/responsive/media_query.scss";
+
+
+#loginView{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  
+  .login-form {
+    max-width: 600px;
+    margin: auto;
+    @include responsive(s) {
+      
+    }
+  }
+  .clip-loader-login {
+    position: relative;
+    margin-left: 45%;
+  }
+
+  .text-align{
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+  }
+  .img-align{
+    max-width: 600px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .bg-default{
+    background-image: url("../../assets/img/background-web.png");
+    background-size: 100%;
+  }
+}
+.bg-default{
+  background-image: url("../../assets/img/background-web.png");
+  background-size: 100%;
+}
+

@@ -1,0 +1,81 @@
+#fechamento-lista {
+
+  .botton-to-right {
+    display: block;
+    text-align: right;
+    padding-right: 150px;
+    padding-bottom: 10px;
+  }
+
+  .quadrado {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+
+  .vermelho {
+    background-color: rgb(255, 107, 109);
+  }
+
+  .amarelo {
+    background-color: rgb(255, 243, 117);
+  }
+
+  .row-legenda{
+    margin: 0 !important;
+    padding-top: 40px;
+  }
+
+  .p-b-20{
+    padding-bottom: 20px;
+  }
+  .p-t-20{
+    padding-top: 20px;
+  }
+  .m-l-0{
+    margin-left: 0px;
+  }
+  .m-r-1{
+    margin-right: 1px;
+  }
+  .b-r-1{
+    border-radius: 1.375rem !important;
+  }
+
+  .text-medico{
+    margin: 15px !important;
+    font-size: 1.5rem;
+  }
+
+  .text-fechamento{
+    margin: 10px !important;
+    font-size: 2rem;
+    background-color: #009776;
+    color: white;
+  }
+  .date-custom{
+    display: block;
+    width: 100%;
+    height: calc(2.75rem + 2px);
+    padding: 0.625rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #8898aa;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #cad1d7;
+    border-radius: 0.375rem;
+    box-shadow: none;
+    -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  }
+  .p-l-10{
+    padding-left: 10px;
+  }
+  .m-b-3{
+    margin-bottom: 3px;
+  }
+}

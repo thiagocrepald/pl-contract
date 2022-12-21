@@ -1,0 +1,46 @@
+.usuario-form {
+  width: 800px !important;
+  padding-top: 30px;
+  button {
+    margin-left: 40% !important;
+  }
+}
+.card{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: auto;
+  height: 100%;
+}
+
+.thead-light{
+  background-color:#00c4a3 !important;
+
+}
+.botton-to-right{
+  display: block;
+  text-align: right;
+  padding-right: 150px;
+  padding-bottom: 10px;
+}
+.custom-link{
+  background-color: #009776;
+  border: none;
+  color: white;
+  padding: 3px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 26px;
+  text-shadow: 0 0 0.2em #8F7;
+}
+.b-r-1{
+  border-radius: 1.375rem !important;
+}
+.p-t-50{
+  padding-top: 50px;
+}
+.pointer{
+  cursor: pointer;
+}

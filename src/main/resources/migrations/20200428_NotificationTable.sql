@@ -1,0 +1,38 @@
+CREATE TABLE `NOTIFICATION` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+`MEDIC_ID` INT(11) NOT NULL,
+`MESSAGE` LONGTEXT NOT NULL,
+`DATE` DATETIME NOT NULL,
+`TYPE` VARCHAR(45) NOT NULL,
+`STATUS` varchar(45) DEFAULT NULL,
+`ESCALA_ID` int(11) DEFAULT NULL,
+`PLANTAO_ID` int(11) DEFAULT NULL,
+`CANDIDATO_PLANTAO_ID` int(11) DEFAULT NULL,
+`EVENT_ID` int(11) DEFAULT NULL,
+`TROCA_VAGA_ID` int(11) DEFAULT NULL,
+PRIMARY KEY (`ID`)
+);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_MEDIC_ID
+        foreign key (MEDIC_ID) references MEDICO (ID);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_CANDIDATO_PLANTAO_ID
+        foreign key (CANDIDATO_PLANTAO_ID) references CANDIDATO_PLANTAO (ID);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_ESCALA_ID
+        foreign key (ESCALA_ID) references ESCALA (ID);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_PLANTAO_ID
+        foreign key (PLANTAO_ID) references PLANTAO (ID);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_EVENT_ID
+        foreign key (EVENT_ID) references EVENTO (ID);
+
+alter table NOTIFICATION
+add constraint FK_NOTIFICATION_TROCA_VAGA_ID
+        foreign key (TROCA_VAGA_ID) references TROCA_VAGA (ID);

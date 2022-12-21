@@ -1,0 +1,430 @@
+{
+    "size": 10,
+    "last": true,
+    "first": true,
+    "number": 0,
+    "sort": {
+        "sorted": false,
+        "unsorted": false
+    },
+    "pageable": {},
+    "totalPages": 1,
+    "totalElements": 9,
+    "numberOfElements": 9,
+    "content": [
+        {
+            "id": 1,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "ok",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 2,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "pendency",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 3,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "adminAdjustment",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 4,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "doctorAdjustment",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 5,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "correction",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 6,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "contested",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 7,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "rejected",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 8,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "notRegistered",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        },
+        {
+            "id": 9,
+            "doctor": {
+                "id": 1,
+                "crm": "42298/PR",
+                "name": "Yasmine Pádua Saloio",
+                "contracts": [
+                    {
+                        "id": 1
+                    },
+                    {
+                        "id": 2
+                    },
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    },
+                    {
+                        "id": 6
+                    },
+                    {
+                        "id": 7
+                    },
+                    {
+                        "id": 8
+                    }
+                ]
+            },
+            "scale": "UPA PIRAQUARA - FEVEREIRO/2021",
+            "local": "Pediatria Emergência",
+            "month": "Fevereiro",
+            "year": "2021",
+            "status": "adjusted",
+            "specialty": "Pediatria",
+            "sector": "EMERGÊNCIA",
+            "date": "Terça 01/12",
+            "time": "08:02",
+            "finalTime": "08:00",
+            "estimatedTime": "08:00 - 20:00",
+            "hours": "00:00"
+        }
+    ]
+}

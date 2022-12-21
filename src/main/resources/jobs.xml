@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job-scheduling-data
+        xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd"
+        version="1.8">
+
+    <pre-processing-commands>
+        <delete-jobs-in-group>*</delete-jobs-in-group>
+        <delete-triggers-in-group>*</delete-triggers-in-group>
+    </pre-processing-commands>
+
+    <processing-directives>
+        <overwrite-existing-data>true</overwrite-existing-data>
+        <ignore-duplicates>false</ignore-duplicates>
+    </processing-directives>
+
+    <schedule>
+        <job>
+            <name>CheckExpiredEscalasJob</name>
+            <group>JobGroup</group>
+            <job-class>br.com.plantaomais.job.CheckExpiredEscalasJob</job-class>
+        </job>
+        <job>
+            <name>MigrateAttachmentsJob</name>
+            <group>JobGroup</group>
+            <job-class>br.com.plantaomais.job.MigrateAttachmentsJob</job-class>
+        </job>
+        <job>
+            <name>UploadAttachmentsJob</name>
+            <group>JobGroup</group>
+            <job-class>br.com.plantaomais.job.UploadAttachmentsJob</job-class>
+        </job>
+        <job>
+            <name>DoctorsOnCallNotificationJob</name>
+            <group>JobGroup</group>
+            <job-class>br.com.plantaomais.job.DoctorsOnCallNotificationJob</job-class>
+        </job>
+        <trigger>
+            <simple>
+                <name>TriggerCheckExpiredEscalasJob</name>
+                <job-name>CheckExpiredEscalasJob</job-name>
+                <job-group>JobGroup</job-group>
+                <repeat-count>-1</repeat-count>
+                <repeat-interval>43200000</repeat-interval>
+            </simple>
+        </trigger>
+        <trigger>
+            <simple>
+                <name>TriggerMigrateAttachmentsJob</name>
+                <job-name>MigrateAttachmentsJob</job-name>
+                <job-group>JobGroup</job-group>
+                <repeat-count>-1</repeat-count>
+                <repeat-interval>900000</repeat-interval>  <!--  every 15 minutes  -->
+            </simple>
+        </trigger>
+        <trigger>
+            <simple>
+                <name>TriggerUploadAttachmentsJob</name>
+                <job-name>UploadAttachmentsJob</job-name>
+                <job-group>JobGroup</job-group>
+                <repeat-count>-1</repeat-count>
+                <repeat-interval>900000</repeat-interval>  <!--  every 15 minutes  -->
+            </simple>
+        </trigger>
+        <trigger>
+            <simple>
+                <name>TriggerDoctorsOnCallNotificationJob</name>
+                <job-name>DoctorsOnCallNotificationJob</job-name>
+                <job-group>JobGroup</job-group>
+                <repeat-count>-1</repeat-count>
+                <repeat-interval>3600000</repeat-interval>  <!--  every hour  -->
+            </simple>
+        </trigger>
+    </schedule>
+
+</job-scheduling-data>

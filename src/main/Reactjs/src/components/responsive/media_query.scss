@@ -1,0 +1,31 @@
+$xs-device: 374px; 
+$sm-device: 768px; 
+$md-device: 992px; 
+$lg-device: 1200px; 
+
+@mixin responsive($size) {
+  @if $size == ss { /* usado em iphone 5 pra baixo - menos de 374px*/
+    @media only screen and (max-width: $xs-device) {
+      @content;
+    }
+
+  } @else if $size == s { /* usado em celulares - menos de 767px */
+    @media only screen and (max-width: $sm-device - 1) {
+      @content;
+    }
+
+  } @else if $size == sm { /* usado em telas pequenas, tablets - entre 768px - 991px*/
+    @media only screen and (min-width: $sm-device) and (max-width: $md-device - 1) {
+      @content;
+    }
+    
+  } @else if $size == m { /* usado em telas médias, desktops - entre 992px - 1199px*/
+    @media only screen and (min-width: $md-device) and (max-width: $lg-device - 1) {
+      @content;
+    }
+  } @else if $size == l { /* usado em telas grandes, desktops - 1200px */
+    @media only screen and (min-width: $lg-device) {
+      @content;
+    }
+  }
+}

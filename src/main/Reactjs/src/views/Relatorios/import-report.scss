@@ -1,0 +1,168 @@
+.import-report__container {
+    display: flex;
+    padding: 0 26px;
+    justify-content: space-between;
+
+    &--field {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+
+        div.MuiFilledInput-root {
+            height: 34px;
+
+            &.MuiFilledInput-underline.MuiInputBase-fullWidth.MuiInputBase-formControl {
+                padding-bottom: 18px;
+            }
+        }
+
+        .data-field {
+            div.custom-date-field-wrap {
+                height: 34px;
+                .MuiFormLabel-root {
+                    font-size: 13px;
+                    font-family: 'Open Sans';
+                    color: #404040;
+                    font-weight: 300;
+                }
+
+                div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginNormal {
+                    padding-top: 7px;
+                }
+            }
+        }
+    }
+
+    &--field-title {
+        font-size: 14px;
+        color: #3e3e3e;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div > div > div {
+        padding-bottom: 10px !important;
+    }  
+}
+
+.import-report__collapse-fields {
+    padding: 0 26px;
+    margin: 19px 0 28px;
+
+    div.MuiFilledInput-root {
+        height: 34px;
+    }
+
+    &-title {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #3e3e3e;
+        font-weight: 700;
+        margin-bottom: 6px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &-text {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 25px 10px 15px;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #e3e3e3;
+        line-height: 16px;
+
+        .text-field--title {
+            font-size: 12px;
+            color: #7b7b7b;
+        }
+        .text-field--answer {
+            font-size: 14px;
+            color: #3e3e3e;
+        }
+
+        .text-field--flex {
+            flex: 0 0 25%;
+        }
+    }
+
+    &-text:last-child {
+        border: none;
+    }
+}
+
+.report-import__modal {
+    background: white;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    left: 0;
+    height: 100%;
+
+    .pagination-wrapper {
+        position: relative;
+        top: 95px;
+        margin-bottom: 57px;
+    }
+
+    .full-width {
+        .MuiFormControl-fullWidth {
+            width: 110%;
+        }
+    }
+
+    &--header {
+        display: flex;
+        align-items: center;
+        height: 66px;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 0 26px;
+    }
+
+    &--buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 80px;
+        padding: 0 26px;
+
+        div.MuiFilledInput-root {
+            height: 34px;
+        }
+    }
+
+    &--fields {
+        background: #f2fffc;
+        padding: 21px;
+        display: flex;
+        justify-content: space-between;
+
+        .radio-button {
+            font-size: 11px;
+            color: black;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            margin-right: 12px;
+        }
+
+        #other-discounts{
+            min-width: 178px;
+        }
+        
+    }
+}
+
+.doctor-hold-icon {
+    cursor: pointer;
+}

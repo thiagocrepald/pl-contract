@@ -1,0 +1,22 @@
+.toast__container {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    height: 46px;
+    border-radius: 4px;
+    background: #bd5739;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+    .icon-checked {
+        content: url(../../assets/img/svg/erro.svg);
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    .icon-close {
+        content: url(../../assets/img/svg/fechar.svg);
+        cursor: pointer;
+    }
+}

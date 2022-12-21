@@ -1,0 +1,101 @@
+body {
+    background: white;
+}
+
+.contract__container {
+    height: 100vh;
+    overflow: auto;
+    &--header {
+        height: 64px;
+        border-bottom: solid 1px #d8d8d8;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 26px;
+        background: white;
+        span {
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+        .notification-img-button{
+            border: none;
+        }
+        .notification-img {
+            content: url(../../../assets/img/svg/notificaçao.svg);
+            width: 32px;
+            cursor: pointer;
+        }
+    }
+    &--body {
+        padding: 0 24px;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+        height: 80px;
+        display: flex;
+        background: white;
+    }
+    .MuiTableCell-head:first-child,
+    .MuiTableCell-body:first-child {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .MuiTableHead-root {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    &--caption {
+        font-family: 'Open Sans';
+        color: #505050;
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: 26px;
+        width: 300px;
+        position: relative;
+        bottom: 50px;
+        .contract__container--caption-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #FFB801;
+            margin-right: 8px;
+        }
+        .contract__container--caption-color:nth-of-type(2) {
+            background: #FF0101;
+        }
+        .contract__container--caption-color:nth-of-type(3) {
+            background: #979797;
+        }
+    }
+
+    .row-container {
+        &--fivedays {
+            background: #FFF4F4;
+            .MuiTableCell-body:first-child {
+                border-left: 10px solid #FF0101;
+                padding: 17px 0 17px 6px;
+            }
+        }
+    
+        &--onemonth {
+            background: #FFF9EB;
+            .MuiTableCell-body:first-child {
+                border-left: 10px solid #FFB801;
+                padding: 17px 0 17px 6px;
+            }
+        }
+    
+        &--archived {
+            .MuiTableCell-body{
+                color: #979797;
+                &:first-child {
+                    border-left: 10px solid #979797;
+                    padding: 17px 0 17px 6px;
+                }
+            }
+        }
+    }    
+}

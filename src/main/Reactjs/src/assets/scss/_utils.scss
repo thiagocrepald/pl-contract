@@ -1,0 +1,27 @@
+@mixin imageSize($sizeX, $sizeY) {
+  img {
+    width: $sizeX;
+    height: $sizeY;
+    min-width: $sizeX;
+    max-width: $sizeX;
+    min-height: $sizeY;
+    max-height: $sizeY;
+  }
+}
+
+@mixin itemSize($sizeX, $sizeY) {
+  width: $sizeX;
+  height: $sizeY;
+  min-width: $sizeX;
+  max-width: $sizeX;
+  min-height: $sizeY;
+  max-height: $sizeY;
+}
+
+@mixin randomBackgroundColor($colors) {
+  @for $i from 1 through 20 {
+    &:nth-child(#{length($colors)}n+#{$i}) {
+      background: lighten(nth($colors, random(length($colors))), 0);
+    }
+  }
+}

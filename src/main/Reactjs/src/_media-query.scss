@@ -1,0 +1,49 @@
+$l-device: 1200px;
+$m-device: 1170px;
+$s-device: 760px;
+$ss-device: 320px;
+
+$l-height-device: 950px;
+$m-height-device: 900px;
+$s-height-device: 700px;
+$ss-height-device: 500px;
+
+@mixin responsive($size) {
+  @if $size == ss {
+    @media only screen and (max-width: $ss-device) {
+      @content;
+    }
+  } @else if $size == s {
+    @media only screen and (max-width: $s-device) {
+      @content;
+    }
+  } @else if $size == m {
+    @media only screen and (min-width: $s-device + 1) and (max-width: $m-device) {
+      @content;
+    }
+  } @else if $size == l {
+    @media only screen and (min-width: $m-device + 1) {
+      @content;
+    }
+  }
+}
+
+@mixin responsiveHeight($size) {
+  @if $size == ss {
+    @media only screen and (max-height: $ss-height-device) {
+      @content;
+    }
+  } @else if $size == s {
+    @media only screen and (min-height: $ss-height-device + 1) and (max-height: $s-height-device) {
+      @content;
+    }
+  } @else if $size == m {
+    @media only screen and (min-height: $s-height-device + 1) and (max-height: $m-height-device) {
+      @content;
+    }
+  } @else if $size == l {
+    @media only screen and (min-height: $l-height-device + 1) {
+      @content;
+    }
+  }
+}

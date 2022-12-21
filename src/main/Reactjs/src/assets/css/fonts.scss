@@ -1,0 +1,61 @@
+@import "./icon-font.scss";
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./../fonts/open/OpenSans-Light.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(./../fonts/open/OpenSans-LightItalic.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./../fonts/open/OpenSans-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(./../fonts/open/OpenSans-Italic.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./../fonts/open/OpenSans-SemiBold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(./../fonts/open/OpenSans-SemiBoldItalic.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./../fonts/open/OpenSans-Bold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(./../fonts/open/OpenSans-BoldItalic.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(./../fonts/open/OpenSans-ExtraBold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(./../fonts/open/OpenSans-ExtraBoldItalic.ttf);
+    font-weight: 700;
+}

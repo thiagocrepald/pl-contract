@@ -1,0 +1,41 @@
+#confirmarEmailView{
+  .email-form {
+    width: 100% !important;
+    padding-top: 200px;
+    button {
+      margin-left: 40% !important;
+    }
+  }
+  .clip-loader-login {
+    position: relative;
+    margin-left: 45%;
+  }
+
+  .text-align{
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+  }
+  .img-align{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .bg-default{
+    background-image: url("../../assets/img/background-web.png");
+    background-size: 100%;
+  }
+
+  .text{
+    color: white;
+  }
+  .p-l-10{
+    padding-left: 10px;
+  }
+
+}
+.bg-default{
+  background-image: url("../../assets/img/background-web.png");
+  background-size: 100%;
+}
+
+
